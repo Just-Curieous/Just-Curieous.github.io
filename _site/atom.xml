@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Lanyon</title>
+ <link href="http://0.0.0.0:1113/atom.xml" rel="self"/>
+ <link href="http://0.0.0.0:1113/"/>
+ <updated>2025-03-16T20:04:43+00:00</updated>
+ <id>http://0.0.0.0:1113</id>
+ <author>
+   <name>Mark Otto</name>
+   <email>markdotto@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Curie: Move Scientific Research at the Speed of Thought</title>
+   <link href="http://0.0.0.0:1113/blog/2025/03/16/curie-intro-blog/"/>
+   <updated>2025-03-16T12:00:00+00:00</updated>
+   <id>http://0.0.0.0:1113/blog/2025/03/16/curie-intro-blog</id>
+   <content type="html">&lt;div style=&quot;text-align: center; color: gray;&quot;&gt;
+&lt;h2&gt;Toward Rigorous and Automated Scientific Experimentation with AI Agents&lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+&lt;a href=&quot;https://arxiv.org/abs/2502.16069&quot;&gt;Paper Link&lt;/a&gt; | &lt;a href=&quot;https://github.com/Just-Curieous/Curie&quot;&gt;Github Link&lt;/a&gt; | &lt;a href=&quot;#&quot;&gt;Demo Link&lt;/a&gt;
+
+&lt;p&gt;
+Patrick Tser Jern Kon&lt;sup&gt;*&lt;/sup&gt;, Jiachen Liu&lt;sup&gt;*&lt;/sup&gt;, &lt;br /&gt;
+Qiuyi Ding, Jingjia Peng, Xinyi Zhu,&lt;br /&gt;
+Yiming Qiu, Zhenning Yang, Yibo Huang, Jayanth Srinivasa,&lt;br /&gt;
+Myungjin Lee, Mosharaf Chowdhury, Ang Chen (&lt;sup&gt;*&lt;/sup&gt; Equal Contribution)
+&lt;/p&gt;
+
+&lt;!-- &lt;p&gt;&lt;sup&gt;*&lt;/sup&gt; Equal Contribution&lt;/p&gt; --&gt;
+&lt;/div&gt;
+&lt;p&gt;As researchers, this is our daily routine: we dive deep into literature, absorb diverse perspectives, and let these insights fuel our creativity. One moment, you might stumble upon an idea:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Maybe configuring the ML model architecture differently could boost performance on your dataset,&lt;/li&gt;
+  &lt;li&gt;Perhaps tuning the LLM reasoning structure might improve a model’s output quality,&lt;/li&gt;
+  &lt;li&gt;Probably adjusting the atomic composition of a material could make it more efficient for battery storage?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These sparks of intuition are the lifeblood of research. Yet, transforming them into verified knowledge requires something far less glamorous: rigorous, often tedious scientific experimentation. Designing the experiment, executing it, collecting results, analyzing data, and refining your hypothesis—it’s a cycle of trial and error that can consume days, months, even years.&lt;/p&gt;
+
+&lt;p&gt;Figure 1. Curie overview.&lt;/p&gt;
+
+&lt;p&gt;Why couldn’t AI agents automate this grueling process? Imagine AI that could design experiments, execute them flawlessly, analyze the results, and iteratively refine hypotheses, closing the loop as shown in Figure 1 and freeing us to focus on the creative heart of research. Move scientific discovery at the speed of thought!&lt;/p&gt;
+
+&lt;p&gt;However, the problem is, unlike tasks such as trip planning or general problem-solving, scientific progress demands rigor. If science isn’t rigorous, it’s reckless.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-challenge-why-rigor-matters&quot;&gt;The Challenge: Why Rigor Matters&lt;/h3&gt;
+&lt;p&gt;Scientific experimentation is the backbone of progress, demanding reliability, methodical control, and interpretability to transform curiosity into verifiable knowledge. Without rigor, we risk unreliable results, irreproducible findings, and ultimately, a lack of trust in AI-driven discoveries.&lt;/p&gt;
+
+&lt;h3 id=&quot;introducing-curie-rigor-embedded-ai-experimentation&quot;&gt;Introducing Curie: Rigor-Embedded AI Experimentation&lt;/h3&gt;
+&lt;p&gt;We’re thrilled to introduce Curie, an AI agent framework designed to bring rigor to automated experimentation. Curie isn’t just designed to automate experiments; it’s built to empower researchers to reproduce existing work, extend findings, and even challenge established conclusions, fostering a more dynamic and rigorous scientific process, as shown in Figure 2.&lt;/p&gt;
+
+&lt;p&gt;Figure 2. A case study of Curie.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-curie-works-the-rigor-engine&quot;&gt;How Curie Works: The Rigor Engine&lt;/h3&gt;
+&lt;p&gt;At the heart of Curie lies our innovative Experimental Rigor Engine, designed to maintain agent creativity while ensuring methodological soundness. As shown in Figure 3, this engine is composed of three key modules:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Intra-Agent Rigor Module: Focuses on reliability within individual agents by enforcing a set of extensible rigor policies. This includes ensuring that experiment plans align with objectives and that setups are reproducible; minimizing the risk of errors.&lt;/li&gt;
+  &lt;li&gt;Inter-Agent Rigor Module: Maintains methodical control over agent coordination, ensuring correct task transitions and efficient task scheduling. This module orchestrates the workflow between agents, ensuring that the experimental process adheres to a logical sequence.&lt;/li&gt;
+  &lt;li&gt;Experiment Knowledge Module: Enhances interpretability by maintaining well-structured documentation, enabling seamless collaboration and efficient experiment management. This module addresses the limitations of LLMs in knowledge management by providing a structured and verifiable record of the experimental process.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Figure 3. High-level Curie workflow with an example task in LLM reasoning.&lt;/p&gt;
+
+&lt;h3 id=&quot;real-world-validation-the-curie-benchmark&quot;&gt;Real-World Validation: The Curie Benchmark&lt;/h3&gt;
+&lt;p&gt;To evaluate Curie’s capabilities, we’ve developed a novel experimental benchmark comprising 46 tasks across four computer science domains. These tasks are derived directly from influential research papers and widely adopted open-source projects, ensuring that they reflect real-world challenges and practical significance. The evaluation shows that Curie significantly outperforms existing AI agent frameworks. When compared to the strongest baseline, Curie achieves a remarkable 3.4x improvement in correctly answering research questions through experimentation. This substantial leap forward underscores Curie’s ability to automate complex and rigorous experimentation, marking a major step toward accelerating scientific research and enhancing the reliability of AI-driven discovery.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@misc{kon2025curierigorousautomatedscientific,
+      title={Curie: Toward Rigorous and Automated Scientific Experimentation with AI Agents}, 
+      author={Patrick Tser Jern Kon and Jiachen Liu and Qiuyi Ding and Yiming Qiu and Zhenning Yang and Yibo Huang and Jayanth Srinivasa and Myungjin Lee and Mosharaf Chowdhury and Ang Chen},
+      year={2025},
+      eprint={2502.16069},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2502.16069}, 
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+
+</feed>
