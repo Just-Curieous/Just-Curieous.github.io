@@ -1,10 +1,10 @@
 # Setup
 title:               Curie
-tagline:             ''
+tagline:             
 description:         '<b href="https://github.com/Just-Curieous/Curie">Curie</b>: Toward Rigorous and Automated Scientific Experimentation with AI Agents'
-url:                 http://lanyon.getpoole.com
-baseurl:             'http://Just-Curieous.github.io/'
-paginate:            5
+url:                 http://Just-Curieous.github.io
+baseurl:             ""
+paginate:            1
 permalink:           pretty
 
 # About/contact
@@ -15,7 +15,10 @@ author:
 
 # Gems
 plugins:
+  - jekyll-gist
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-target-blank
 
 # Custom vars
 version:             1.1.0
