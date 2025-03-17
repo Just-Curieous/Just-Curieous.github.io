@@ -1,29 +1,15 @@
 ---
 layout: page
-title: About
+title:  About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+*Without rigor, science is reckless.*
+Curie stands at the forefront of scientific innovation, offering an AI-agent framework that revolutionizes the way we conduct rigorous scientific experimentation.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+## Join Our Community! 🌍
 
-There are currently two themes built on Poole:
+Got questions or ideas? We'd love to hear from you! Join our community and let's make science even more awesome together! [GitHub Issues](https://github.com/Just-Curieous/curie/issues) 💬
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+## License 📜
 
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+Curie is released under the Apache 2.0 License.

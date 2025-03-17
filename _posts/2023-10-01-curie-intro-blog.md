@@ -61,6 +61,8 @@ Figure 3. High-level Curie workflow with an example task in LLM reasoning.
 ## Real-World Validation: The Curie Benchmark
 To evaluate Curie's capabilities, we've developed a novel experimental benchmark comprising 46 tasks across four computer science domains. These tasks are derived directly from influential research papers and widely adopted open-source projects, ensuring that they reflect real-world challenges and practical significance. The evaluation shows that Curie significantly outperforms existing AI agent frameworks. When compared to the strongest baseline, Curie achieves a remarkable 3.4x improvement in correctly answering research questions through experimentation. This substantial leap forward underscores Curie's ability to automate complex and rigorous experimentation, marking a major step toward accelerating scientific research and enhancing the reliability of AI-driven discovery.
 
+
+
 ```
 @misc{kon2025curierigorousautomatedscientific,
       title={Curie: Toward Rigorous and Automated Scientific Experimentation with AI Agents}, 
@@ -71,4 +73,5 @@ To evaluate Curie's capabilities, we've developed a novel experimental benchmark
       primaryClass={cs.AI},
       url={https://arxiv.org/abs/2502.16069}, 
 }
-```
+``` 
+
