@@ -60,7 +60,7 @@
     
       
         
-          <!-- <a class="sidebar-nav-item" href="http://0.0.0.0:1113/about/">About</a> -->
+          <a class="sidebar-nav-item" href="http://0.0.0.0:1113/about/">About</a>
         
       
     
@@ -103,20 +103,26 @@
     <span class="post-date">16 Mar 2025</span>
 
     <div style="text-align: center; color: gray;">
-<h2>Toward Rigorous and Automated Scientific Experimentation with AI Agents</h2>
+<h2 style="font-size: 1.15em; color: grey;">Toward Rigorous and Automated Scientific Experimentation with AI Agents</h2>
 </div>
 
 <div style="text-align: center">
-<a href="https://arxiv.org/abs/2502.16069">Paper Link</a> | <a href="https://github.com/Just-Curieous/Curie">Github Link</a> | <a href="#">Demo Link</a>
+<a href="https://arxiv.org/abs/2502.16069">📄 Paper Link</a> | <a href="https://github.com/Just-Curieous/Curie">💻 Github Link</a> | <a href="#"> 🎮 Demo Link</a>
 
-<p>
-Patrick Tser Jern Kon<sup>*</sup>, Jiachen Liu<sup>*</sup>, <br />
-Qiuyi Ding, Jingjia Peng, Xinyi Zhu,<br />
-Yiming Qiu, Zhenning Yang, Yibo Huang, Jayanth Srinivasa,<br />
-Myungjin Lee, Mosharaf Chowdhury, Ang Chen (<sup>*</sup> Equal Contribution)
+<p style="font-size: 0.8em; color: grey;">
+<a href="https://www.cs-pk.com/">Patrick Tser Jern Kon</a><sup>*</sup>, <a href="https://websites.umich.edu/~amberljc/">Jiachen Liu</a><sup>*</sup> (<sup>*</sup> Equal Contribution) <br />
+Qiuyi Ding, <a href="https://www.linkedin.com/in/jingjia-peng/">Jingjia Peng</a>, Xinyi Zhu, 
+<a href="https://yimingqiu.me/">Yiming Qiu</a>, <a href="https://zyang37.github.io/">Zhenning Yang</a>, <a href="https://huangyibo.github.io/">Yibo Huang</a>, <a href="https://scholar.google.com/citations?user=HtNfeKYAAAAJ&amp;hl=en">Jayanth Srinivasa</a>,<br />
+<a href="https://www.linkedin.com/in/myungjin-lee-5308136/">Myungjin Lee</a>, <a href="https://www.mosharaf.com/">Mosharaf Chowdhury</a>, <a href="https://web.eecs.umich.edu/~chenang/">Ang Chen</a> <br />
+University of Michigan, Cisco Systems
 </p>
-
 </div>
+
+<p><img src="/figures/overview.png" alt="Curie Overview" /></p>
+<div style="text-align: center; font-size: 0.8em">
+Figure 1. Curie overview.
+</div>
+
 <p>As researchers, this is our daily routine: we dive deep into literature, absorb diverse perspectives, and let these insights fuel our creativity. One moment, you might stumble upon an idea:</p>
 <ul>
   <li>Maybe configuring the ML model architecture differently could boost performance on your dataset,</li>
@@ -124,40 +130,35 @@ Myungjin Lee, Mosharaf Chowdhury, Ang Chen (<sup>*</sup> Equal Contribution)
   <li>Probably adjusting the atomic composition of a material could make it more efficient for battery storage?</li>
 </ul>
 
-<p>These sparks of intuition are the lifeblood of research. Yet, transforming them into verified knowledge requires something far less glamorous: rigorous, often tedious scientific experimentation. Designing the experiment, executing it, collecting results, analyzing data, and refining your hypothesis—it’s a cycle of trial and error that can consume days, months, even years.</p>
-
-<p><img src="/figures/overview.png" alt="Curie Overview" /></p>
-<div style="text-align: center;">
-Figure 1. Curie overview.
-</div>
+<p>These sparks of intuition are the lifeblood of research. Yet, transforming them into verified knowledge requires something far less glamorous: rigorous, often tedious <strong>scientific experimentation</strong>. Designing the experiment, executing it, collecting results, analyzing data, and refining your hypothesis—it’s a cycle of trial and error that can consume days, months, even years.</p>
 
 <p>However, the problem is, unlike tasks such as trip planning or general problem-solving, scientific progress demands rigor. If science isn’t rigorous, it’s reckless.</p>
 
-<h3 id="the-challenge-why-rigor-matters">The Challenge: Why Rigor Matters</h3>
+<h2 id="the-challenge-why-rigor-matters">The Challenge: Why Rigor Matters</h2>
 <p>Scientific experimentation is the backbone of progress, demanding reliability, methodical control, and interpretability to transform curiosity into verifiable knowledge. Without rigor, we risk unreliable results, irreproducible findings, and ultimately, a lack of trust in AI-driven discoveries.</p>
 
-<h3 id="introducing-curie-rigor-embedded-ai-experimentation">Introducing Curie: Rigor-Embedded AI Experimentation</h3>
-<p>We’re thrilled to introduce Curie, an AI agent framework designed to bring rigor to automated experimentation. Curie isn’t just designed to automate experiments; it’s built to empower researchers to reproduce existing work, extend findings, and even challenge established conclusions, fostering a more dynamic and rigorous scientific process, as shown in Figure 2.</p>
+<h2 id="introducing-curie-rigor-embedded-ai-experimentation">Introducing Curie: Rigor-Embedded AI Experimentation</h2>
+<p>We’re thrilled to introduce Curie, an AI agent framework designed to bring rigor to automated experimentation. Curie isn’t just designed to automate experiments as shown in Figure 1; it’s built to empower researchers to reproduce existing work, extend findings, and even challenge established conclusions, fostering a more dynamic and rigorous scientific process, as shown in Figure 2.</p>
 
 <p><img src="/figures/case-study.png" alt="case-study" /></p>
-<div style="text-align: center;">
+<div style="text-align: center; font-size: 0.8em">
 Figure 2. A case study of Curie.
 </div>
 
-<h3 id="how-curie-works-the-rigor-engine">How Curie Works: The Rigor Engine</h3>
+<h2 id="how-curie-works-the-rigor-engine">How Curie Works: The Rigor Engine</h2>
 <p>At the heart of Curie lies our innovative Experimental Rigor Engine, designed to maintain agent creativity while ensuring methodological soundness. As shown in Figure 3, this engine is composed of three key modules:</p>
 <ul>
-  <li>Intra-Agent Rigor Module: Focuses on reliability within individual agents by enforcing a set of extensible rigor policies. This includes ensuring that experiment plans align with objectives and that setups are reproducible; minimizing the risk of errors.</li>
-  <li>Inter-Agent Rigor Module: Maintains methodical control over agent coordination, ensuring correct task transitions and efficient task scheduling. This module orchestrates the workflow between agents, ensuring that the experimental process adheres to a logical sequence.</li>
-  <li>Experiment Knowledge Module: Enhances interpretability by maintaining well-structured documentation, enabling seamless collaboration and efficient experiment management. This module addresses the limitations of LLMs in knowledge management by providing a structured and verifiable record of the experimental process.</li>
+  <li><strong>Intra-Agent Rigor Module</strong>: Focuses on reliability within individual agents by enforcing a set of extensible rigor policies. This includes ensuring that experiment plans align with objectives and that setups are reproducible; minimizing the risk of errors.</li>
+  <li><strong>Inter-Agent Rigor Module</strong>: Maintains methodical control over agent coordination, ensuring correct task transitions and efficient task scheduling. This module orchestrates the workflow between agents, ensuring that the experimental process adheres to a logical sequence.</li>
+  <li><strong>Experiment Knowledge Module</strong>: Enhances interpretability by maintaining well-structured documentation, enabling seamless collaboration and efficient experiment management. This module addresses the limitations of LLMs in knowledge management by providing a structured and verifiable record of the experimental process.</li>
 </ul>
 
 <p><img src="/figures/workflow.png" alt="workflow" /></p>
-<div style="text-align: center;">
+<div style="text-align: center; font-size: 0.8em">
 Figure 3. High-level Curie workflow with an example task in LLM reasoning.
 </div>
 
-<h3 id="real-world-validation-the-curie-benchmark">Real-World Validation: The Curie Benchmark</h3>
+<h2 id="real-world-validation-the-curie-benchmark">Real-World Validation: The Curie Benchmark</h2>
 <p>To evaluate Curie’s capabilities, we’ve developed a novel experimental benchmark comprising 46 tasks across four computer science domains. These tasks are derived directly from influential research papers and widely adopted open-source projects, ensuring that they reflect real-world challenges and practical significance. The evaluation shows that Curie significantly outperforms existing AI agent frameworks. When compared to the strongest baseline, Curie achieves a remarkable 3.4x improvement in correctly answering research questions through experimentation. This substantial leap forward underscores Curie’s ability to automate complex and rigorous experimentation, marking a major step toward accelerating scientific research and enhancing the reliability of AI-driven discovery.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@misc{kon2025curierigorousautomatedscientific,
