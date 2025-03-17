@@ -3,7 +3,7 @@ title:               Curie
 tagline:             ''
 description:         '<b href="https://github.com/Just-Curieous/Curie">Curie</b>: Toward Rigorous and Automated Scientific Experimentation with AI Agents'
 url:                 http://lanyon.getpoole.com
-baseurl:             ''
+baseurl:             'http://Just-Curieous.github.io/'
 paginate:            5
 permalink:           pretty
 
