@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Curie: Move Scientific Research at the Speed of Thought"
-date: 2025-03-16 12:00:00 -0000
+date: 2025-03-17 12:00:00 -0000
 categories: blog
 ---
 <div style="text-align: center; color: gray;">
