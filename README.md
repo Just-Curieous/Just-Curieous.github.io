@@ -10,7 +10,7 @@ permalink: /
 </div>
 
 <div style="text-align: center">
-<a href="https://arxiv.org/abs/2502.16069">📄 Paper Link</a> | <a href="https://github.com/Just-Curieous/Curie">💻 Github Link</a> | <a href="#"> 🎮 Demo Link</a>
+<a href="https://arxiv.org/abs/2502.16069">📄 Paper Link</a> | <a href="https://github.com/Just-Curieous/Curie">💻 Github Link</a> | <a href="http://44.202.70.8:1113/"> 🎮 Demo Link</a>
 
 <p style="font-size: 0.8em; color: grey;">
 <a href="https://www.cs-pk.com/">Patrick Tser Jern Kon</a><sup>*</sup>, <a href="https://websites.umich.edu/~amberljc/">Jiachen Liu</a><sup>*</sup> (<sup>*</sup> Equal Contribution) <br>
