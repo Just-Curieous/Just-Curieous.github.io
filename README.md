@@ -47,7 +47,7 @@ We're thrilled to introduce Curie, an AI agent framework designed to bring rigor
 <div class="figure-container" style="text-align: center; max-width: 100%; margin: 0 auto;">
     <img src="/assets/case-study.png" alt="Case Study" style="width: 100%; height: auto; display: block;">
     <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
-        Figure 2. Case study. Curie tries to reprodcuce, extend and challenge the Large Language Monkeys [1].
+        Figure 2. Case study. Curie tries to reprodcuce, extend and challenge the Large Language Monkeys paper[1].
     </p>
 </div>
 
@@ -81,4 +81,4 @@ To evaluate Curie's capabilities, we've developed a novel experimental benchmark
 }
 ``` 
 
-[1] Large Language Monkeys: Scaling Inference Compute with Repeated Sampling. arXiv:2407.21787
+*[1] Large Language Monkeys: Scaling Inference Compute with Repeated Sampling. arXiv:2407.21787*
