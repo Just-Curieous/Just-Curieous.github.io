@@ -22,7 +22,7 @@ University of Michigan, Cisco Systems
 </div>
 
 <div style="text-align: center;">
-    <img src="/figures/overview.png" alt="Curie Overview" style="max-width: 100%; height: auto;">
+    <img src="/assets/overview.png" alt="Curie Overview" style="max-width: 100%; height: auto;">
     <p style="font-size: 0.8em; margin-top: 10px;">
         Figure 1. Curie overview.
     </p>
@@ -45,7 +45,7 @@ Scientific experimentation is the backbone of progress, demanding reliability, m
 We're thrilled to introduce Curie, an AI agent framework designed to bring rigor to automated experimentation. Curie isn't just designed to automate experiments as shown in Figure 1; it's built to empower researchers to reproduce existing work, extend findings, and even challenge established conclusions, fostering a more dynamic and rigorous scientific process, as shown in Figure 2.
 
 <div class="figure-container" style="text-align: center; max-width: 100%; margin: 0 auto;">
-    <img src="/figures/case-study.png" alt="Case Study" style="width: 100%; height: auto; display: block;">
+    <img src="/assets/case-study.png" alt="Case Study" style="width: 100%; height: auto; display: block;">
     <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
         Figure 2. A case study of Curie.
     </p>
@@ -58,7 +58,7 @@ At the heart of Curie lies our innovative Experimental Rigor Engine, designed to
 - **Experiment Knowledge Module**: Enhances interpretability by maintaining well-structured documentation, enabling seamless collaboration and efficient experiment management. This module addresses the limitations of LLMs in knowledge management by providing a structured and verifiable record of the experimental process.
 
 <div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;">
-    <img src="/figures/workflow.png" alt="Curie Workflow" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="/assets/workflow.png" alt="Curie Workflow" style="width: 100%; height: auto; display: block; margin: 0 auto;">
     <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
         Figure 3. High-level Curie workflow with an example task in LLM reasoning.
     </p>
