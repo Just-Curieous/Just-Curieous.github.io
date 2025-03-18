@@ -1,134 +1,82 @@
-# Lanyon
-
-Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
-
-![Lanyon](https://f.cloud.github.com/assets/98681/1825266/be03f014-71b0-11e3-9539-876e61530e24.png)
-![Lanyon with open sidebar](https://f.cloud.github.com/assets/98681/1825267/be04a914-71b0-11e3-966f-8afe9894c729.png)
-
-
-## Contents
-
-- [Usage](#usage)
-- [Options](#options)
-  - [Sidebar menu](#sidebar-menu)
-  - [Themes](#themes)
-  - [Reverse layout](#reverse-layout)
-- [Development](#development)
-- [Author](#author)
-- [License](#license)
-
-
-## Usage
-
-Lanyon is a theme built on top of [Poole](https://github.com/poole/poole), which provides a fully furnished Jekyll setup—just download and start the Jekyll server. See [the Poole usage guidelines](https://github.com/poole/poole#usage) for how to install and use Jekyll.
-
-
-## Options
-
-Lanyon includes some customizable options, typically applied via classes on the `<body>` element.
-
-
-### Sidebar menu
-
-Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
-
-```
 ---
-layout: page
-title: About
+layout: home
+title: Curie - Move Scientific Research at the Speed of Thought
+permalink: /
 ---
+
+
+<div style="text-align: center; color: gray;">
+<h2 style="font-size: 1.15em; color: grey;">Toward Rigorous and Automated Scientific Experimentation with AI Agents</h2>
+</div>
+
+<div style="text-align: center">
+<a href="https://arxiv.org/abs/2502.16069">📄 Paper Link</a> | <a href="https://github.com/Just-Curieous/Curie">💻 Github Link</a> | <a href="#"> 🎮 Demo Link</a>
+
+<p style="font-size: 0.8em; color: grey;">
+<a href="https://www.cs-pk.com/">Patrick Tser Jern Kon</a><sup>*</sup>, <a href="https://websites.umich.edu/~amberljc/">Jiachen Liu</a><sup>*</sup> (<sup>*</sup> Equal Contribution) <br>
+Qiuyi Ding, <a href="https://www.linkedin.com/in/jingjia-peng/">Jingjia Peng</a>, Xinyi Zhu, 
+<a href="https://yimingqiu.me/">Yiming Qiu</a>, <a href="https://zyang37.github.io/">Zhenning Yang</a>, <a href="https://huangyibo.github.io/">Yibo Huang</a>, <a href="https://scholar.google.com/citations?user=HtNfeKYAAAAJ&hl=en">Jayanth Srinivasa</a>,<br>
+<a href="https://www.linkedin.com/in/myungjin-lee-5308136/">Myungjin Lee</a>, <a href="https://www.mosharaf.com/">Mosharaf Chowdhury</a>, <a href="https://web.eecs.umich.edu/~chenang/">Ang Chen</a> <br>
+University of Michigan, Cisco Systems
+</p>
+</div>
+
+<div style="text-align: center;">
+    <img src="/figures/overview.png" alt="Curie Overview" style="max-width: 100%; height: auto;">
+    <p style="font-size: 0.8em; margin-top: 10px;">
+        Figure 1. Curie overview.
+    </p>
+</div>
+As researchers, this is our daily routine: we dive deep into literature, absorb diverse perspectives, and let these insights fuel our creativity. One moment, you might stumble upon an idea:
+- Maybe configuring the ML model architecture differently could boost performance on your dataset,
+- Perhaps tuning the LLM reasoning structure might improve a model’s output quality,
+- Probably adjusting the atomic composition of a material could make it more efficient for battery storage?
+
+These sparks of intuition are the lifeblood of research. Yet, transforming them into verified knowledge requires something far less glamorous: rigorous, often tedious **scientific experimentation**. Designing the experiment, executing it, collecting results, analyzing data, and refining your hypothesis—it’s a cycle of trial and error that can consume days, months, even years.
+
+
+However, the problem is, unlike tasks such as trip planning or general problem-solving, scientific progress demands rigor. If science isn’t rigorous, it’s reckless.
+
+
+## The Challenge: Why Rigor Matters
+Scientific experimentation is the backbone of progress, demanding reliability, methodical control, and interpretability to transform curiosity into verifiable knowledge. Without rigor, we risk unreliable results, irreproducible findings, and ultimately, a lack of trust in AI-driven discoveries.
+
+## Introducing Curie: Rigor-Embedded AI Experimentation
+We're thrilled to introduce Curie, an AI agent framework designed to bring rigor to automated experimentation. Curie isn't just designed to automate experiments as shown in Figure 1; it's built to empower researchers to reproduce existing work, extend findings, and even challenge established conclusions, fostering a more dynamic and rigorous scientific process, as shown in Figure 2.
+
+<div class="figure-container" style="text-align: center; max-width: 100%; margin: 0 auto;">
+    <img src="/figures/case-study.png" alt="Case Study" style="width: 100%; height: auto; display: block;">
+    <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
+        Figure 2. A case study of Curie.
+    </p>
+</div>
+
+## How Curie Works: The Rigor Engine
+At the heart of Curie lies our innovative Experimental Rigor Engine, designed to maintain agent creativity while ensuring methodological soundness. As shown in Figure 3, this engine is composed of three key modules:
+- **Intra-Agent Rigor Module**: Focuses on reliability within individual agents by enforcing a set of extensible rigor policies. This includes ensuring that experiment plans align with objectives and that setups are reproducible; minimizing the risk of errors.
+- **Inter-Agent Rigor Module**: Maintains methodical control over agent coordination, ensuring correct task transitions and efficient task scheduling. This module orchestrates the workflow between agents, ensuring that the experimental process adheres to a logical sequence.
+- **Experiment Knowledge Module**: Enhances interpretability by maintaining well-structured documentation, enabling seamless collaboration and efficient experiment management. This module addresses the limitations of LLMs in knowledge management by providing a structured and verifiable record of the experimental process.
+
+<div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;">
+    <img src="/figures/workflow.png" alt="Curie Workflow" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
+        Figure 3. High-level Curie workflow with an example task in LLM reasoning.
+    </p>
+</div>
+
+## Real-World Validation: The Curie Benchmark
+To evaluate Curie's capabilities, we've developed a novel experimental benchmark comprising 46 tasks across four computer science domains. These tasks are derived directly from influential research papers and widely adopted open-source projects, ensuring that they reflect real-world challenges and practical significance. The evaluation shows that Curie significantly outperforms existing AI agent frameworks. When compared to the strongest baseline, Curie achieves a remarkable 3.4x improvement in correctly answering research questions through experimentation. This substantial leap forward underscores Curie's ability to automate complex and rigorous experimentation, marking a major step toward accelerating scientific research and enhancing the reliability of AI-driven discovery.
+
+
+
 ```
-
-**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` layout.
-
-
-### Themes
-
-Lanyon ships with eight optional themes based on the [base16 color scheme](https://github.com/chriskempson/base16). Apply a theme to change the color scheme (mostly applies to sidebar and links).
-
-![Lanyon with red theme](https://f.cloud.github.com/assets/98681/1825270/be065110-71b0-11e3-9ed8-9b8de753a4af.png)
-![Lanyon with red theme and open sidebar](https://f.cloud.github.com/assets/98681/1825269/be05ec20-71b0-11e3-91ea-a9138ef07186.png)
-
-There are eight themes available at this time.
-
-![Available theme classes](https://f.cloud.github.com/assets/98681/1817044/e5b0ec06-6f68-11e3-83d7-acd1942797a1.png)
-
-To use a theme, add any one of the available theme classes to the `<body>` element in the `default.html` layout, like so:
-
-```html
-<body class="theme-base-08">
-  ...
-</body>
-```
-
-To create your own theme, look to the Themes section of [included CSS file](https://github.com/poole/lanyon/blob/master/public/css/lanyon.css). Copy any existing theme (they're only a few lines of CSS), rename it, and change the provided colors.
-
-
-### Reverse layout
-
-![Lanyon with reverse layout](https://f.cloud.github.com/assets/98681/1825265/be03f2e4-71b0-11e3-89f1-360705524495.png)
-![Lanyon with reverse layout and open sidebar](https://f.cloud.github.com/assets/98681/1825268/be056174-71b0-11e3-88c8-5055bca4307f.png)
-
-Reverse the page orientation with a single class.
-
-```html
-<body class="layout-reverse">
-  ...
-</body>
-```
-
-
-### Sidebar overlay instead of push
-
-Make the sidebar overlap the viewport content with a single class:
-
-```html
-<body class="sidebar-overlay">
-  ...
-</body>
-```
-
-This will keep the content stationary and slide in the sidebar over the side content. It also adds a `box-shadow` based outline to the toggle for contrast against backgrounds, as well as a `box-shadow` on the sidebar for depth.
-
-It's also available for a reversed layout when you add both classes:
-
-```html
-<body class="layout-reverse sidebar-overlay">
-  ...
-</body>
-```
-
-### Sidebar open on page load
-
-Show an open sidebar on page load by modifying the `<input>` tag within the `sidebar.html` layout to add the `checked` boolean attribute:
-
-```html
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
-```
-
-Using Liquid you can also conditionally show the sidebar open on a per-page basis. For example, here's how you could have it open on the homepage only:
-
-```html
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" {% if page.title =="Home" %}checked{% endif %}>
-```
-
-## Development
-
-Lanyon has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be to submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
-
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
-
-
-## License
-
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
+@misc{kon2025curierigorousautomatedscientific,
+      title={Curie: Toward Rigorous and Automated Scientific Experimentation with AI Agents}, 
+      author={Patrick Tser Jern Kon and Jiachen Liu and Qiuyi Ding and Yiming Qiu and Zhenning Yang and Yibo Huang and Jayanth Srinivasa and Myungjin Lee and Mosharaf Chowdhury and Ang Chen},
+      year={2025},
+      eprint={2502.16069},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2502.16069}, 
+}
+``` 
