@@ -21,12 +21,6 @@ University of Michigan, Cisco Systems
 </p>
 </div>
 
-<div style="text-align: center;">
-    <img src="/assets/overview.png" alt="Curie Overview" style="max-width: 100%; height: auto;">
-    <p style="font-size: 0.8em; margin-top: 10px;">
-        Figure 1. Curie overview.
-    </p>
-</div>
 As researchers, this is our daily routine: we dive deep into literature, absorb diverse perspectives, and let these insights fuel our creativity. One moment, you might stumble upon an idea:
 - Maybe configuring the ML model architecture differently could boost performance on your dataset,
 - Perhaps tuning the LLM reasoning structure might improve a model’s output quality,
@@ -34,12 +28,19 @@ As researchers, this is our daily routine: we dive deep into literature, absorb 
 
 These sparks of intuition are the lifeblood of research. Yet, transforming them into verified knowledge requires something far less glamorous: rigorous, often tedious **scientific experimentation**. Designing the experiment, executing it, collecting results, analyzing data, and refining your hypothesis—it’s a cycle of trial and error that can consume days, months, even years.
 
-
-However, the problem is, unlike tasks such as trip planning or general problem-solving, scientific progress demands rigor. If science isn’t rigorous, it’s reckless.
+<div style="text-align: center;">
+    <img src="/assets/overview.png" alt="Curie Overview" style="max-width: 100%; height: auto;">
+    <p style="font-size: 0.8em; margin-top: 10px;">
+        Figure 1. Curie overview.
+    </p>
+</div>
 
 
 ## The Challenge: Why Rigor Matters
-Scientific experimentation is the backbone of progress, demanding reliability, methodical control, and interpretability to transform curiosity into verifiable knowledge. Without rigor, we risk unreliable results, irreproducible findings, and ultimately, a lack of trust in AI-driven discoveries.
+However, the problem is, unlike tasks such as trip planning or general problem-solving, scientific progress demands rigor. If science isn’t rigorous, it’s reckless.
+
+
+Experimentation is the backbone of scientific progress, demanding reliability, methodical control, and interpretability to transform curiosity into verifiable knowledge. Without rigor, we risk unreliable results, irreproducible findings, and ultimately, a lack of trust in AI-driven discoveries.
 
 ## Introducing Curie: Rigor-Embedded AI Experimentation
 We're thrilled to introduce Curie, an AI agent framework designed to bring rigor to automated experimentation. Curie isn't just designed to automate experiments as shown in Figure 1; it's built to empower researchers to reproduce existing work, extend findings, and even challenge established conclusions, fostering a more dynamic and rigorous scientific process, as shown in Figure 2.
