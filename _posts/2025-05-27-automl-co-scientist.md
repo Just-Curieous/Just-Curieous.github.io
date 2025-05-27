@@ -52,7 +52,7 @@ From there, it will work to generate the optimal ML solution for your specific p
 
 ### Curie in Action: Demonstrated Performance
 
-We've benchmarked Curie on several ML tasks—including several from [MLE-Bench](https://github.com/openai/mle-bench/)—to demonstrate its capabilities, including:
+We've benchmarked Curie on several ML tasks—including several from [MLE-Bench](https://github.com/openai/mle-bench/)—to demonstrate its capabilities:
 * [Identifying Melanoma (Cancer) in Images of Skin Lesions](https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/siim-isic-melanoma-classification)
 * [Predict the severity level of diabetic retinopathy based on retinal images](https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/aptos2019-blindness-detection)
 * [Histopathologic Cancer Detection](https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench/histopathologic-cancer-detection)
