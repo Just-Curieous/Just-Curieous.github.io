@@ -13,11 +13,12 @@ categories: [machine-learning, research]
 
 
 <div style="text-align: center">
-<a href="https://github.com/Just-Curieous/Curie">💻 Github Link</a> | <a href="https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench"> 📒 Use Cases</a>
+<a href="https://github.com/Just-Curieous/Curie">💻 Github Link</a> | <a href="https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench"> 📒 Use Cases</a> | 
+<a href="https://arxiv.org/abs/2502.16069">📄 Paper Link</a>
 
 </div>
 
-In our previous post, we introduced [Curie](https://github.com/Just-Curieous/Curie): an open-sourced AI co-scientist that automates experimentation and accelerate the journey from idea to validation. Today, we're thrilled to introduce Curie's AutoML feature, designed to help researchers **rapidly test hypotheses** and unlock insights from their **valuable data**.
+In our previous [post](https://www.just-curieous.com/), we introduced [Curie](https://github.com/Just-Curieous/Curie): an open-sourced AI co-scientist that automates experimentation and accelerate the journey from idea to validation. Today, we're thrilled to introduce Curie's AutoML feature, designed to help researchers **rapidly test hypotheses** and unlock insights from their **valuable data**.
 
 
 We built this AutoML feature after personally seeing how even highly-capable researchers—in fields like biology, materials science, and chemistry—struggle to apply machine learning to their work. They often have valuable data, but lack the advanced ML knowledge to fully explore its potential. 
@@ -79,7 +80,8 @@ Despite the strong performance, there are areas where Curie can evolve.
 
 ### Join Us & Contribute to Open Science
 
-And this is where we need your help! We believe in open science, and your usage of Curie will help us make it better and support more scientists. We also welcome contributions to our repo, we can't keep up with all the latest research by ourselves!
+And this is where we need your help! We believe in open science, and your usage of Curie will help us make it better and support more scientists. We also welcome contributions to our [repo](https://github.com/Just-Curieous/Curie/tree/main), we can't keep up with all the latest research by ourselves!
+
 
 <!-- ## Performance Visualizations
 
