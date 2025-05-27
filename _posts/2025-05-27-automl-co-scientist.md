@@ -17,17 +17,17 @@ categories: [machine-learning, research]
 
 </div>
 
-In our previous post, we introduced [Curie](https://github.com/Just-Curieous/Curie): an AI co-scientist that automates experimentation and accelerate the journey from idea to validation. Today, we're thrilled to introduce Curie's AutoML feature, designed to help researchers **rapidly test hypotheses** and unlock insights from their **valuable data**.
+In our previous post, we introduced [Curie](https://github.com/Just-Curieous/Curie): an open-sourced AI co-scientist that automates experimentation and accelerate the journey from idea to validation. Today, we're thrilled to introduce Curie's AutoML feature, designed to help researchers **rapidly test hypotheses** and unlock insights from their **valuable data**.
 
 
-We built this AutoML agent after personally seeing how even highly-capable researchers—in fields like biology, materials science, and chemistry—struggle to apply machine learning to their work. They often have valuable data, but lack the advanced ML knowledge to fully explore its potential. 
+We built this AutoML feature after personally seeing how even highly-capable researchers—in fields like biology, materials science, and chemistry—struggle to apply machine learning to their work. They often have valuable data, but lack the advanced ML knowledge to fully explore its potential. 
 Despite their expertise, the technical barriers make ML feel out of reach, and this is the exact problem that we wanted to solve. Curie can create end-to-end machine learning solutions for non-ML experts, and we have evidence of it already making a positive impact with our early adopters.
 
-### Introducing Curie: Your Automated ML Solution
+### Introducing Curie's New Feature: Your Automated ML Solution
 
-Curie goes beyond traditional parameter or architecture search based AutoML, and takes over a lot of the tedious but critical work performed by ML practitioners.
+Curie goes beyond traditional parameter or architecture search based AutoML, and takes over all the tedious but critical work performed by ML practitioners.
 
-From data preprocessing, to model and hyperparameter selection, to training and deploying recipes, which all require deep expertise. It's a vast search space to find the best performing solution, often involving iterative experiments and specialized intuition to fine-tune all the different components in the pipeline. Curie aims to automate this. The goal is to democratize access to powerful ML capabilities.
+From data preprocessing, to model and hyperparameter selection, to training and deploying recipes, which all require deep expertise. It's a **vast search space** to find the best performing solution, often involving **iterative experiments** and **specialized intuition** to fine-tune all the different components in the pipeline. Curie aims to automate this. The goal is to democratize access to powerful ML capabilities for researchers.
 
 <div class="figure-container" style="text-align: center; margin: 20px 0;">
     <img src="{{ site.baseurl }}/assets/exp-bench-mle-curie.drawio.png" 
@@ -40,25 +40,24 @@ From data preprocessing, to model and hyperparameter selection, to training and 
 
 All you need to do is input your research question and the path to your dataset:
 ```bash
-python3 -m curie.main -q 'E.g. How to improve my prediction accuracy on my dataset. \
-                      Checkout <paper.pdf> for the background information.' \
+python3 -m curie.main -q 'E.g. How to improve my prediction accuracy on my dataset. Checkout <paper.pdf> for the background information.' \
                       --dataset_dir <abs_path_to_your_dataset> \
-                      --workspace_name <abs_path_to_your_codebase [optional]> \
+                      --workspace_name <[optional] abs_path_to_your_codebase> \
                       --task_config curie/configs/mle.json
 ```
 
 
-
-From there, it will work to generate the optimal ML solution for your specific problem given the time budget.
+From there, it will work to generate the optimal ML solution for your specific problem given the budget.
 
 ### Curie in Action: Demonstrated Performance
 
-We've benchmarked Curie on several challenging ML tasks to demonstrate its capabilities, including:
+We've benchmarked Curie on several ML tasks to demonstrate its capabilities, including:
 * [Identifying Melanoma in Images of Skin Lesions](https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/siim-isic-melanoma-classification)
 * [Predict the severity level of diabetic retinopathy based on retinal images](https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/aptos2019-blindness-detection)
 * [Histopathologic Cancer Detection](https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench/histopathologic-cancer-detection)
+* [Stock Price Prediction](https://github.com/Just-Curieous/Curie-Use-Cases/tree/main/stock_prediction)
 
-More AutoML use cases can be found [here](https://github.com/Just-Curieous/Curie-Use-Cases/tree/main).
+More AutoML use cases can be found [here](https://github.com/Just-Curieous/Curie-Use-Cases).
 
 
 #### Case Study: Skin Cancer Detection Challenge
@@ -67,7 +66,7 @@ Here's a preview of an auto-generated report from Curie. You can scroll through 
 <iframe src="{{ site.baseurl }}/assets/report.pdf" width="100%" height="600px" style="border: 1px solid #ddd;"></iframe>
 
 Curie demonstrated some impressive capabilities in the skin cancer detection challenge:
-* It managed to train a model achieving a remarkable 0.99 AUC (top 1% performance) using 2 hours. Moreover, the agent intelligently explored a variety of models with early stopping strategies on dataset subsets to quickly gauge potential to efficiently navigate the vast search space of possible models.
+* It managed to train a model achieving **a remarkable 0.99 AUC (top 1% performance)** using 2 hours. Moreover, the agent intelligently explored a variety of models with early stopping strategies on dataset subsets to quickly gauge potential to **efficiently navigate the vast search space** of possible models.
 * It incorporated data augmentation (random rotation, color jitter, ...) to enhance model generalization.
 * It provided detailed analysis on performance versus system trade-offs, offering insights for efficient model deployment strategies.
 

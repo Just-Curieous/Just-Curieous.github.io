@@ -91,7 +91,7 @@
                             </a>
                             
                                 
-                                    <ul><li>AI Co-scientist that Democratizes Machine Learning for Researchers<ul><li><a href="#introducing-curie-your-automated-ml-solution" onclick="mobilePageScrollToAnchor(this)" >Introducing Curie: Your Automated ML Solution</a></li><li><a href="#curie-in-action-demonstrated-performance" onclick="mobilePageScrollToAnchor(this)" >Curie in Action: Demonstrated Performance</a></li><li><a href="#join-us--contribute-to-open-science" onclick="mobilePageScrollToAnchor(this)" >Join Us &amp; Contribute to Open Science</a></li></ul></li></ul>
+                                    <ul><li>AI Co-scientist that Democratizes Machine Learning for Researchers<ul><li><a href="#introducing-curies-new-feature-your-automated-ml-solution" onclick="mobilePageScrollToAnchor(this)" >Introducing Curie’s New Feature: Your Automated ML Solution</a></li><li><a href="#curie-in-action-demonstrated-performance" onclick="mobilePageScrollToAnchor(this)" >Curie in Action: Demonstrated Performance</a></li><li><a href="#join-us--contribute-to-open-science" onclick="mobilePageScrollToAnchor(this)" >Join Us &amp; Contribute to Open Science</a></li></ul></li></ul>
 
                                 
                             
@@ -137,16 +137,16 @@
 
 </div>
 
-<p>In our previous post, we introduced <a href="https://github.com/Just-Curieous/Curie">Curie</a>: an AI co-scientist that automates experimentation and accelerate the journey from idea to validation. Today, we’re thrilled to introduce Curie’s AutoML feature, designed to help researchers <strong>rapidly test hypotheses</strong> and unlock insights from their <strong>valuable data</strong>.</p>
+<p>In our previous post, we introduced <a href="https://github.com/Just-Curieous/Curie">Curie</a>: an open-sourced AI co-scientist that automates experimentation and accelerate the journey from idea to validation. Today, we’re thrilled to introduce Curie’s AutoML feature, designed to help researchers <strong>rapidly test hypotheses</strong> and unlock insights from their <strong>valuable data</strong>.</p>
 
-<p>We built this AutoML agent after personally seeing how even highly-capable researchers—in fields like biology, materials science, and chemistry—struggle to apply machine learning to their work. They often have valuable data, but lack the advanced ML knowledge to fully explore its potential. 
+<p>We built this AutoML feature after personally seeing how even highly-capable researchers—in fields like biology, materials science, and chemistry—struggle to apply machine learning to their work. They often have valuable data, but lack the advanced ML knowledge to fully explore its potential. 
 Despite their expertise, the technical barriers make ML feel out of reach, and this is the exact problem that we wanted to solve. Curie can create end-to-end machine learning solutions for non-ML experts, and we have evidence of it already making a positive impact with our early adopters.</p>
 
-<h3 id="introducing-curie-your-automated-ml-solution">Introducing Curie: Your Automated ML Solution</h3>
+<h3 id="introducing-curies-new-feature-your-automated-ml-solution">Introducing Curie’s New Feature: Your Automated ML Solution</h3>
 
-<p>Curie goes beyond traditional parameter or architecture search based AutoML, and takes over a lot of the tedious but critical work performed by ML practitioners.</p>
+<p>Curie goes beyond traditional parameter or architecture search based AutoML, and takes over all the tedious but critical work performed by ML practitioners.</p>
 
-<p>From data preprocessing, to model and hyperparameter selection, to training and deploying recipes, which all require deep expertise. It’s a vast search space to find the best performing solution, often involving iterative experiments and specialized intuition to fine-tune all the different components in the pipeline. Curie aims to automate this. The goal is to democratize access to powerful ML capabilities.</p>
+<p>From data preprocessing, to model and hyperparameter selection, to training and deploying recipes, which all require deep expertise. It’s a <strong>vast search space</strong> to find the best performing solution, often involving <strong>iterative experiments</strong> and <strong>specialized intuition</strong> to fine-tune all the different components in the pipeline. Curie aims to automate this. The goal is to democratize access to powerful ML capabilities for researchers.</p>
 
 <div class="figure-container" style="text-align: center; margin: 20px 0;">
     <img src="/assets/exp-bench-mle-curie.drawio.png" alt="Curie AutoML Overview" style="width: 80%; height: auto; max-width: 100%;" />
@@ -156,25 +156,25 @@ Despite their expertise, the technical barriers make ML feel out of reach, and t
 </div>
 
 <p>All you need to do is input your research question and the path to your dataset:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> curie.main <span class="nt">-q</span> <span class="s1">'E.g. How to improve my prediction accuracy on my dataset. \
-                      Checkout &lt;paper.pdf&gt; for the background information.'</span> <span class="se">\</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> curie.main <span class="nt">-q</span> <span class="s1">'E.g. How to improve my prediction accuracy on my dataset. Checkout &lt;paper.pdf&gt; for the background information.'</span> <span class="se">\</span>
                       <span class="nt">--dataset_dir</span> &lt;abs_path_to_your_dataset&gt; <span class="se">\</span>
-                      <span class="nt">--workspace_name</span> &lt;abs_path_to_your_codebase <span class="o">[</span>optional]&gt; <span class="se">\</span>
+                      <span class="nt">--workspace_name</span> &lt;<span class="o">[</span>optional] abs_path_to_your_codebase&gt; <span class="se">\</span>
                       <span class="nt">--task_config</span> curie/configs/mle.json
 </code></pre></div></div>
 
-<p>From there, it will work to generate the optimal ML solution for your specific problem given the time budget.</p>
+<p>From there, it will work to generate the optimal ML solution for your specific problem given the budget.</p>
 
 <h3 id="curie-in-action-demonstrated-performance">Curie in Action: Demonstrated Performance</h3>
 
-<p>We’ve benchmarked Curie on several challenging ML tasks to demonstrate its capabilities, including:</p>
+<p>We’ve benchmarked Curie on several ML tasks to demonstrate its capabilities, including:</p>
 <ul>
   <li><a href="https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/siim-isic-melanoma-classification">Identifying Melanoma in Images of Skin Lesions</a></li>
   <li><a href="https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/aptos2019-blindness-detection">Predict the severity level of diabetic retinopathy based on retinal images</a></li>
   <li><a href="https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench/histopathologic-cancer-detection">Histopathologic Cancer Detection</a></li>
+  <li><a href="https://github.com/Just-Curieous/Curie-Use-Cases/tree/main/stock_prediction">Stock Price Prediction</a></li>
 </ul>
 
-<p>More AutoML use cases can be found <a href="https://github.com/Just-Curieous/Curie-Use-Cases/tree/main">here</a>.</p>
+<p>More AutoML use cases can be found <a href="https://github.com/Just-Curieous/Curie-Use-Cases">here</a>.</p>
 
 <h4 id="case-study-skin-cancer-detection-challenge">Case Study: Skin Cancer Detection Challenge</h4>
 <p>Here’s a preview of an auto-generated report from Curie. You can scroll through it to see the detailed analysis and insights:</p>
@@ -183,7 +183,7 @@ Despite their expertise, the technical barriers make ML feel out of reach, and t
 
 <p>Curie demonstrated some impressive capabilities in the skin cancer detection challenge:</p>
 <ul>
-  <li>It managed to train a model achieving a remarkable 0.99 AUC (top 1% performance) using 2 hours. Moreover, the agent intelligently explored a variety of models with early stopping strategies on dataset subsets to quickly gauge potential to efficiently navigate the vast search space of possible models.</li>
+  <li>It managed to train a model achieving <strong>a remarkable 0.99 AUC (top 1% performance)</strong> using 2 hours. Moreover, the agent intelligently explored a variety of models with early stopping strategies on dataset subsets to quickly gauge potential to <strong>efficiently navigate the vast search space</strong> of possible models.</li>
   <li>It incorporated data augmentation (random rotation, color jitter, …) to enhance model generalization.</li>
   <li>It provided detailed analysis on performance versus system trade-offs, offering insights for efficient model deployment strategies.</li>
 </ul>
@@ -392,7 +392,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2025-05-27 00:23:37 -0700"
+        "time": "2025-05-27 10:15:02 -0700"
     },
     "basePath": "",
     "book": {
