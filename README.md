@@ -78,7 +78,6 @@ To evaluate Curie's capabilities, we've developed a novel experimental benchmark
       eprint={2502.16069},
       archivePrefix={arXiv},
       primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2502.16069}, 
 }
 ``` 
 

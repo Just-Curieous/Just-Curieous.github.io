@@ -47,7 +47,6 @@ python3 -m curie.main -q 'E.g. How to improve my prediction accuracy on my datas
                       --task_config curie/configs/mle.json
 ```
 
-
 From there, it will work to generate the optimal ML solution for your specific problem given the budget.
 
 ### Curie in Action: Demonstrated Performance
@@ -105,3 +104,16 @@ Here are some visualizations showcasing Curie's performance on various tasks: --
 
 <!-- - The agent accurately identified critical class imbalances within the APTOS 2019 dataset. -->
 <!-- Cool Factor: It smartly discovered that CLAHE enhancement significantly improved performance by clarifying subtle retinal features crucial for diagnosis. -->
+
+
+
+```bib
+@misc{kon2025curierigorousautomatedscientific,
+      title={Curie: Toward Rigorous and Automated Scientific Experimentation with AI Agents}, 
+      author={Patrick Tser Jern Kon and Jiachen Liu and Qiuyi Ding and Yiming Qiu and Zhenning Yang and Yibo Huang and Jayanth Srinivasa and Myungjin Lee and Mosharaf Chowdhury and Ang Chen},
+      year={2025},
+      eprint={2502.16069},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+}
+``` 
