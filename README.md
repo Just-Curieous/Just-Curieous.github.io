@@ -70,7 +70,7 @@ To evaluate Curie's capabilities, we've developed a novel experimental benchmark
 
 
 
-```
+```bib
 @misc{kon2025curierigorousautomatedscientific,
       title={Curie: Toward Rigorous and Automated Scientific Experimentation with AI Agents}, 
       author={Patrick Tser Jern Kon and Jiachen Liu and Qiuyi Ding and Yiming Qiu and Zhenning Yang and Yibo Huang and Jayanth Srinivasa and Myungjin Lee and Mosharaf Chowdhury and Ang Chen},
