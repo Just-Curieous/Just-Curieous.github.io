@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Curie: The AI Co-Scientist Making ML More Accessible to Your Research"
+title: "The AI Co-Scientist Making ML More Accessible for Your Research"
 date: 2025-05-27
 categories: [machine-learning, research]
 ---
@@ -39,7 +39,7 @@ From data preprocessing, to model and hyperparameter selection, to training and 
     </div>
 </div>
 
-All you need to do is input your research question and the path to your dataset:
+All you need to do is input your research question and the dataset path to [Curie](https://github.com/Just-Curieous/Curie):
 ```bash
 python3 -m curie.main -q 'E.g. How to improve my prediction accuracy on my dataset. Checkout <paper.pdf> for the background information.' \
                       --dataset_dir <abs_path_to_your_dataset> \
@@ -52,8 +52,8 @@ From there, it will work to generate the optimal ML solution for your specific p
 
 ### Curie in Action: Demonstrated Performance
 
-We've benchmarked Curie on several ML tasks to demonstrate its capabilities, including:
-* [Identifying Melanoma in Images of Skin Lesions](https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/siim-isic-melanoma-classification)
+We've benchmarked Curie on several ML tasks—including several from [MLE-Bench](https://github.com/openai/mle-bench/)—to demonstrate its capabilities, including:
+* [Identifying Melanoma (Cancer) in Images of Skin Lesions](https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/siim-isic-melanoma-classification)
 * [Predict the severity level of diabetic retinopathy based on retinal images](https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/aptos2019-blindness-detection)
 * [Histopathologic Cancer Detection](https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench/histopathologic-cancer-detection)
 * [Stock Price Prediction](https://github.com/Just-Curieous/Curie-Use-Cases/tree/main/stock_prediction)
