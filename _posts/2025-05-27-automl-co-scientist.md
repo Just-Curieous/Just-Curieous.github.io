@@ -39,12 +39,15 @@ From data preprocessing, to model and hyperparameter selection, to training and 
     </div>
 </div>
 
-All you need to do is input your research question and the dataset path to [Curie](https://github.com/Just-Curieous/Curie):
-```bash
-python3 -m curie.main -q 'E.g. How to improve my prediction accuracy on my dataset. Checkout <paper.pdf> for the background information.' \
-                      --dataset_dir <abs_path_to_your_dataset> \
-                      --workspace_name <[optional] abs_path_to_your_codebase> \
-                      --task_config curie/configs/mle.json
+All you need to do is input your research question and the dataset path to Curie (more details [here](https://github.com/Just-Curieous/Curie)):
+```python
+import curie
+result = curie.experiment(
+    api_keys=key_dict,
+    question="E.g. How to improve my prediction accuracy on my dataset. Checkout <paper.pdf> for the more information.",
+    workspace_name="[Optional] /path/to/your/code",
+    dataset_dir="/path/to/your/dataset"
+)
 ```
 
 From there, it will work to generate the optimal ML solution for your specific problem given the budget.

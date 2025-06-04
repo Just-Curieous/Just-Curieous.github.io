@@ -156,11 +156,14 @@ Despite their expertise, the technical barriers make ML feel out of reach, and t
     </div>
 </div>
 
-<p>All you need to do is input your research question and the dataset path to <a href="https://github.com/Just-Curieous/Curie">Curie</a>:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 <span class="nt">-m</span> curie.main <span class="nt">-q</span> <span class="s1">'E.g. How to improve my prediction accuracy on my dataset. Checkout &lt;paper.pdf&gt; for the background information.'</span> <span class="se">\</span>
-                      <span class="nt">--dataset_dir</span> &lt;abs_path_to_your_dataset&gt; <span class="se">\</span>
-                      <span class="nt">--workspace_name</span> &lt;<span class="o">[</span>optional] abs_path_to_your_codebase&gt; <span class="se">\</span>
-                      <span class="nt">--task_config</span> curie/configs/mle.json
+<p>All you need to do is input your research question and the dataset path to Curie (more details <a href="https://github.com/Just-Curieous/Curie">here</a>):</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">curie</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">curie</span><span class="p">.</span><span class="n">experiment</span><span class="p">(</span>
+    <span class="n">api_keys</span><span class="o">=</span><span class="n">key_dict</span><span class="p">,</span>
+    <span class="n">question</span><span class="o">=</span><span class="s">"E.g. How to improve my prediction accuracy on my dataset. Checkout &lt;paper.pdf&gt; for the more information."</span><span class="p">,</span>
+    <span class="n">workspace_name</span><span class="o">=</span><span class="s">"[Optional] /path/to/your/code"</span><span class="p">,</span>
+    <span class="n">dataset_dir</span><span class="o">=</span><span class="s">"/path/to/your/dataset"</span>
+<span class="p">)</span>
 </code></pre></div></div>
 
 <p>From there, it will work to generate the optimal ML solution for your specific problem given the budget.</p>
@@ -403,7 +406,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2025-05-27 11:22:41 -0700"
+        "time": "2025-06-03 21:10:44 -0700"
     },
     "basePath": "",
     "book": {

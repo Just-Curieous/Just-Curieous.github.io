@@ -3,7 +3,7 @@ layout: home
 title: Curie - Move Scientific Research at the Speed of Thought
 permalink: /
 ---
-
+<!-- bundle exec jekyll serve -->
 
 <div style="text-align: center; color: gray;">
 <h2 style="font-size: 1.15em; color: grey;">Toward Rigorous and Automated Scientific Experimentation with AI Agents</h2>
