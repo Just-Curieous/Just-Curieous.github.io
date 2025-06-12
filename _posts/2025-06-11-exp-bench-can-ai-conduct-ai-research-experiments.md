@@ -7,7 +7,7 @@ categories: [machine-learning, research]
 <!-- bundle exec jekyll serve -->
 
 <div style="text-align: center; color: gray;">
-<!-- <h2 style="font-size: 1.15em; color: grey;">Exploring the Potential of AI in Conducting Scientific Research</h2> -->
+
 </div>
 
 <div style="text-align: center">
@@ -30,7 +30,7 @@ categories: [machine-learning, research]
 </p>
 
 
-<a href="https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench"> 📊 Dataset</a> | 
+<a href="https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench"> 📊 Dataset</a> | 
 <a href="https://arxiv.org/abs/2505.24785">📄 Paper</a> | <a href="https://github.com/Just-Curieous/Curie">💻 Github Link</a> 
 </div>
 
@@ -42,7 +42,7 @@ Intuitively, peer-reviewed AI papers (e.g., in NeurIPS) along with their open-so
 
 ## Our Contribution: EXP-Bench
 
-To address this challenge, we introduce **EXP-Bench**, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in **conducting end-to-end research experiments**—from hypothesis to experimental setup to conclusion. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.
+To address this challenge, we introduce **EXP-Bench**, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in **conducting end-to-end research experiments**—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.
 
 Using this approach, we distilled *461 experiments from NeurIPS and ICLR papers*—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.
 
@@ -69,7 +69,8 @@ Our analysis pinpointed several critical weaknesses:
 3. **Difficulty with Code Execution and Debugging**
 
 
-These results highlight just how far we still are from our goal of automation of research experimentation.
+These results highlight just how far we still are from our goal of automation of research experimentation. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve their ability to conduct AI research experiments.
+
 ## Looking Forward
 
 This work is, we hope, a small step toward our broader goal of designing agents capable of automating scientific research. We see EXP-Bench as a launchpad for the next wave of AI research copilots.

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-11T22:23:35-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curie Blog</title><author><name>Amber Liu</name></author><entry><title type="html">Can AI Conduct AI Research Experiments?</title><link href="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html" rel="alternate" type="text/html" title="Can AI Conduct AI Research Experiments?" /><published>2025-06-11T00:00:00-07:00</published><updated>2025-06-11T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/exp-bench-can-ai-conduct-ai-research-experiments</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html">&lt;!-- bundle exec jekyll serve --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-11T22:52:22-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curie Blog</title><author><name>Amber Liu</name></author><entry><title type="html">Can AI Conduct AI Research Experiments?</title><link href="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html" rel="alternate" type="text/html" title="Can AI Conduct AI Research Experiments?" /><published>2025-06-11T00:00:00-07:00</published><updated>2025-06-11T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/exp-bench-can-ai-conduct-ai-research-experiments</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html">&lt;!-- bundle exec jekyll serve --&gt;
 
 &lt;div style=&quot;text-align: center; color: gray;&quot;&gt;
-&lt;!-- &lt;h2 style=&quot;font-size: 1.15em; color: grey;&quot;&gt;Exploring the Potential of AI in Conducting Scientific Research&lt;/h2&gt; --&gt;
+
 &lt;/div&gt;
 
 &lt;div style=&quot;text-align: center&quot;&gt;
@@ -24,7 +24,7 @@
 &lt;/p&gt;
 
 
-&lt;a href=&quot;https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench&quot;&gt; 📊 Dataset&lt;/a&gt; | 
+&lt;a href=&quot;https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench&quot;&gt; 📊 Dataset&lt;/a&gt; | 
 &lt;a href=&quot;https://arxiv.org/abs/2505.24785&quot;&gt;📄 Paper&lt;/a&gt; | &lt;a href=&quot;https://github.com/Just-Curieous/Curie&quot;&gt;💻 Github Link&lt;/a&gt; 
 &lt;/div&gt;
 
@@ -36,7 +36,7 @@
 
 &lt;h2 id=&quot;our-contribution-exp-bench&quot;&gt;Our Contribution: EXP-Bench&lt;/h2&gt;
 
-&lt;p&gt;To address this challenge, we introduce &lt;strong&gt;EXP-Bench&lt;/strong&gt;, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in &lt;strong&gt;conducting end-to-end research experiments&lt;/strong&gt;—from hypothesis to experimental setup to conclusion. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.&lt;/p&gt;
+&lt;p&gt;To address this challenge, we introduce &lt;strong&gt;EXP-Bench&lt;/strong&gt;, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in &lt;strong&gt;conducting end-to-end research experiments&lt;/strong&gt;—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.&lt;/p&gt;
 
 &lt;p&gt;Using this approach, we distilled &lt;em&gt;461 experiments from NeurIPS and ICLR papers&lt;/em&gt;—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.&lt;/p&gt;
 
@@ -64,7 +64,8 @@ Our analysis pinpointed several critical weaknesses:&lt;/p&gt;
   &lt;li&gt;&lt;strong&gt;Difficulty with Code Execution and Debugging&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;These results highlight just how far we still are from our goal of automation of research experimentation.&lt;/p&gt;
+&lt;p&gt;These results highlight just how far we still are from our goal of automation of research experimentation. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve their ability to conduct AI research experiments.&lt;/p&gt;
+
 &lt;h2 id=&quot;looking-forward&quot;&gt;Looking Forward&lt;/h2&gt;
 
 &lt;p&gt;This work is, we hope, a small step toward our broader goal of designing agents capable of automating scientific research. We see EXP-Bench as a launchpad for the next wave of AI research copilots.&lt;/p&gt;

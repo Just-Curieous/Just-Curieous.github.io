@@ -102,7 +102,7 @@
                             </a>
                             
                                 
-                                    <ul><li>Exploring the Potential of AI in Conducting Scientific Research</li><li><a href="#our-contribution-exp-bench" onclick="mobilePageScrollToAnchor(this)" >Our Contribution: EXP-Bench</a></li><li><a href="#what-exp-bench-reveals-about-todays-ai-agents" onclick="mobilePageScrollToAnchor(this)" >What EXP-Bench Reveals About Today’s AI Agents</a></li><li><a href="#looking-forward" onclick="mobilePageScrollToAnchor(this)" >Looking Forward</a></li><li><a href="#explore-our-work" onclick="mobilePageScrollToAnchor(this)" >Explore Our Work:</a></li></ul>
+                                    <ul><li><a href="#our-contribution-exp-bench" onclick="mobilePageScrollToAnchor(this)" >Our Contribution: EXP-Bench</a></li><li><a href="#what-exp-bench-reveals-about-todays-ai-agents" onclick="mobilePageScrollToAnchor(this)" >What EXP-Bench Reveals About Today’s AI Agents</a></li><li><a href="#looking-forward" onclick="mobilePageScrollToAnchor(this)" >Looking Forward</a></li><li><a href="#explore-our-work" onclick="mobilePageScrollToAnchor(this)" >Explore Our Work:</a></li></ul>
 
                                 
                             
@@ -142,7 +142,7 @@
                     <!-- bundle exec jekyll serve -->
 
 <div style="text-align: center; color: gray;">
-<!-- <h2 style="font-size: 1.15em; color: grey;">Exploring the Potential of AI in Conducting Scientific Research</h2> -->
+
 </div>
 
 <div style="text-align: center">
@@ -165,7 +165,7 @@
 </p>
 
 
-<a href="https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench"> 📊 Dataset</a> | 
+<a href="https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench"> 📊 Dataset</a> | 
 <a href="https://arxiv.org/abs/2505.24785">📄 Paper</a> | <a href="https://github.com/Just-Curieous/Curie">💻 Github Link</a> 
 </div>
 
@@ -177,7 +177,7 @@
 
 <h2 id="our-contribution-exp-bench">Our Contribution: EXP-Bench</h2>
 
-<p>To address this challenge, we introduce <strong>EXP-Bench</strong>, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in <strong>conducting end-to-end research experiments</strong>—from hypothesis to experimental setup to conclusion. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.</p>
+<p>To address this challenge, we introduce <strong>EXP-Bench</strong>, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in <strong>conducting end-to-end research experiments</strong>—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.</p>
 
 <p>Using this approach, we distilled <em>461 experiments from NeurIPS and ICLR papers</em>—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.</p>
 
@@ -205,7 +205,8 @@ Our analysis pinpointed several critical weaknesses:</p>
   <li><strong>Difficulty with Code Execution and Debugging</strong></li>
 </ol>
 
-<p>These results highlight just how far we still are from our goal of automation of research experimentation.</p>
+<p>These results highlight just how far we still are from our goal of automation of research experimentation. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve their ability to conduct AI research experiments.</p>
+
 <h2 id="looking-forward">Looking Forward</h2>
 
 <p>This work is, we hope, a small step toward our broader goal of designing agents capable of automating scientific research. We see EXP-Bench as a launchpad for the next wave of AI research copilots.</p>
@@ -395,7 +396,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2025-06-11 22:23:35 -0700"
+        "time": "2025-06-11 22:52:22 -0700"
     },
     "basePath": "",
     "book": {
