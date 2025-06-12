@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The AI Co-Scientist Making ML More Accessible for Your Research"
+title: "The MLE Agent for Your Research"
 date: 2025-05-27
 categories: [machine-learning, research]
 ---
@@ -8,7 +8,7 @@ categories: [machine-learning, research]
 
 
 <div style="text-align: center; color: gray;">
-<h2 style="font-size: 1.15em; color: grey;">AI Co-scientist that Democratizes Machine Learning for Researchers</h2>
+<h2 style="font-size: 1.15em; color: grey;">The AI Co-Scientist Making ML More Accessible for Your Research</h2>
 </div>
 
 

@@ -1,5 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-03T21:10:44-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curie Blog</title><author><name>Amber Liu</name></author><entry><title type="html">The AI Co-Scientist Making ML More Accessible for Your Research</title><link href="http://localhost:4000/machine-learning/research/2025-05-27-automl-co-scientist.html" rel="alternate" type="text/html" title="The AI Co-Scientist Making ML More Accessible for Your Research" /><published>2025-05-27T00:00:00-07:00</published><updated>2025-05-27T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/automl-co-scientist</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-05-27-automl-co-scientist.html">&lt;div style=&quot;text-align: center; color: gray;&quot;&gt;
-&lt;h2 style=&quot;font-size: 1.15em; color: grey;&quot;&gt;AI Co-scientist that Democratizes Machine Learning for Researchers&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-11T22:23:35-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curie Blog</title><author><name>Amber Liu</name></author><entry><title type="html">Can AI Conduct AI Research Experiments?</title><link href="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html" rel="alternate" type="text/html" title="Can AI Conduct AI Research Experiments?" /><published>2025-06-11T00:00:00-07:00</published><updated>2025-06-11T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/exp-bench-can-ai-conduct-ai-research-experiments</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html">&lt;!-- bundle exec jekyll serve --&gt;
+
+&lt;div style=&quot;text-align: center; color: gray;&quot;&gt;
+&lt;!-- &lt;h2 style=&quot;font-size: 1.15em; color: grey;&quot;&gt;Exploring the Potential of AI in Conducting Scientific Research&lt;/h2&gt; --&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+
+
+&lt;p style=&quot;font-size: 0.8em; color: grey;&quot;&gt;
+  &lt;a href=&quot;https://www.cs-pk.com/&quot;&gt;Patrick Tser Jern Kon&lt;/a&gt;&lt;sup&gt;*&lt;/sup&gt;, 
+  &lt;a href=&quot;https://websites.umich.edu/~amberljc/&quot;&gt;Jiachen Liu&lt;/a&gt;&lt;sup&gt;*&lt;/sup&gt; (Equal Contribution&lt;sup&gt;*&lt;/sup&gt;)&lt;br /&gt;
+  Xinyi Zhu,
+  Qiuyi Ding, 
+  &lt;a href=&quot;https://www.linkedin.com/in/jingjia-peng/&quot;&gt;Jingjia Peng&lt;/a&gt; (University of Michigan),  
+  &lt;a href=&quot;https://jxing.me/&quot;&gt;Jiarong Xing&lt;/a&gt; (UC Berkeley &amp;amp; Rice University), 
+  &lt;a href=&quot;https://huangyibo.github.io/&quot;&gt;Yibo Huang&lt;/a&gt; (University of Michigan), 
+  &lt;a href=&quot;https://yimingqiu.me/&quot;&gt;Yiming Qiu&lt;/a&gt; (UC Berkeley &amp;amp; University of Michigan), 
+  &lt;a href=&quot;https://scholar.google.com/citations?user=HtNfeKYAAAAJ&amp;amp;hl=en&quot;&gt;Jayanth Srinivasa&lt;/a&gt;,
+  &lt;a href=&quot;https://www.linkedin.com/in/myungjin-lee-5308136/&quot;&gt;Myungjin Lee&lt;/a&gt; (Cisco Research), &lt;br /&gt;
+  &lt;a href=&quot;https://www.mosharaf.com/&quot;&gt;Mosharaf Chowdhury&lt;/a&gt; (University of Michigan), 
+  &lt;a href=&quot;https://stanford.edu/~matei/&quot;&gt;Matei Zaharia&lt;/a&gt; (UC Berkeley), 
+  &lt;a href=&quot;https://web.eecs.umich.edu/~chenang/&quot;&gt;Ang Chen&lt;/a&gt; (University of Michigan)
+&lt;/p&gt;
+
+
+&lt;a href=&quot;https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench&quot;&gt; 📊 Dataset&lt;/a&gt; | 
+&lt;a href=&quot;https://arxiv.org/abs/2505.24785&quot;&gt;📄 Paper&lt;/a&gt; | &lt;a href=&quot;https://github.com/Just-Curieous/Curie&quot;&gt;💻 Github Link&lt;/a&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;AI for Science is rapidly advancing, with promising early work on scientific automation—such as DeepMind’s &lt;a href=&quot;https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/&quot;&gt;AlphaEvolve&lt;/a&gt; and others highlighted in this Nature &lt;a href=&quot;https://www.nature.com/articles/s41586-023-06221-2&quot;&gt;paper&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Closely related, the automation of AI research represents a key opportunity to accelerate both the advancement of AI itself and broader scientific progress. Unlike fields requiring physical experimentation, AI research is largely digital—well-suited for LLM-based automation.&lt;/p&gt;
+
+&lt;p&gt;Intuitively, peer-reviewed AI papers (e.g., in NeurIPS) along with their open-source codebases, offer a rich source of completed experiments that could, in theory, be repurposed to evaluate AI capabilities in research automation. In practice, however, extracting these tasks is difficult. Papers often present a polished narrative that omits intermediate steps, while critical details—such as the precise conditions under which results hold—are scattered across dense text, supplementary materials, and sprawling repositories.&lt;/p&gt;
+
+&lt;h2 id=&quot;our-contribution-exp-bench&quot;&gt;Our Contribution: EXP-Bench&lt;/h2&gt;
+
+&lt;p&gt;To address this challenge, we introduce &lt;strong&gt;EXP-Bench&lt;/strong&gt;, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in &lt;strong&gt;conducting end-to-end research experiments&lt;/strong&gt;—from hypothesis to experimental setup to conclusion. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.&lt;/p&gt;
+
+&lt;p&gt;Using this approach, we distilled &lt;em&gt;461 experiments from NeurIPS and ICLR papers&lt;/em&gt;—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;&quot;&gt;
+    &lt;img src=&quot;/assets/images/exp-bench-overview.png&quot; alt=&quot;EXP-Bench Overview&quot; style=&quot;width: 100%; height: auto; display: block; margin: 0 auto;&quot; /&gt;
+    &lt;p style=&quot;font-size: 0.8em; margin-top: 10px; color: grey;&quot;&gt;
+        Figure 1. EXP-Bench evaluates AI agents on research experiment tasks extracted semi-autonomously from peer-reviewed AI papers.
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;&quot;&gt;
+    &lt;img src=&quot;/assets/images/exp-bench-example.png&quot; alt=&quot;EXP-Bench Example&quot; style=&quot;width: 100%; height: auto; display: block; margin: 0 auto;&quot; /&gt;
+    &lt;p style=&quot;font-size: 0.8em; margin-top: 10px; color: grey;&quot;&gt;
+        Figure 2. One AI research task example from ICLR 2024 MogaNet [1].
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;what-exp-bench-reveals-about-todays-ai-agents&quot;&gt;What EXP-Bench Reveals About Today’s AI Agents&lt;/h2&gt;
+
+&lt;p&gt;We tested leading agents, including &lt;em&gt;OpenHands w/ Claude Sonnet 3.7&lt;/em&gt;, and found that while they can earn partial credit for individual steps like experiment design or coding (~20-35% success), their ability to &lt;em&gt;complete a full, executable experiment&lt;/em&gt; is nearly non-existent—a mere 0.5% success rate.
+Our analysis pinpointed several critical weaknesses:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Limited Long-Horizon Planning and Reasoning&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Inability to Handle Open-Ended and Ambiguous Tasks&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Difficulty with Code Execution and Debugging&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These results highlight just how far we still are from our goal of automation of research experimentation.&lt;/p&gt;
+&lt;h2 id=&quot;looking-forward&quot;&gt;Looking Forward&lt;/h2&gt;
+
+&lt;p&gt;This work is, we hope, a small step toward our broader goal of designing agents capable of automating scientific research. We see EXP-Bench as a launchpad for the next wave of AI research copilots.&lt;/p&gt;
+
+&lt;p&gt;That said, much work remains. While EXP-Bench currently focuses on machine learning papers, it does not yet address domains that require interaction with the physical world or support tasks involving true scientific invention. Expanding to those areas—and capturing the creativity, uncertainty, and iteration of real-world discovery—remains an open and exciting challenge.&lt;/p&gt;
+
+&lt;h2 id=&quot;explore-our-work&quot;&gt;Explore Our Work:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;📑 &lt;a href=&quot;https://arxiv.org/abs/2505.24785&quot;&gt;Full paper&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🗃️ &lt;a href=&quot;https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench&quot;&gt;Open-sourced dataset&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-bib highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;@article&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;kon2025expbenchaiconductai&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{EXP-Bench: Can AI Conduct AI Research Experiments?}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+      &lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{Patrick Tser Jern Kon and Jiachen Liu and Xinyi Zhu and Qiuyi Ding and Jingjia Peng and Jiarong Xing and Yibo Huang and Yiming Qiu and Jayanth Srinivasa and Myungjin Lee and Mosharaf Chowdhury and Matei Zaharia and Ang Chen}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;journal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{arXiv preprint 2505.24785}&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;={2025&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;[1] MogaNet: Multi-order Gated Aggregation Network. ICLR 2024&lt;/em&gt;&lt;/p&gt;</content><author><name>Amber Liu</name></author><category term="machine-learning" /><category term="research" /><summary type="html"></summary></entry><entry><title type="html">The MLE Agent for Your Research</title><link href="http://localhost:4000/machine-learning/research/2025-05-27-automl-co-scientist.html" rel="alternate" type="text/html" title="The MLE Agent for Your Research" /><published>2025-05-27T00:00:00-07:00</published><updated>2025-05-27T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/automl-co-scientist</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-05-27-automl-co-scientist.html">&lt;div style=&quot;text-align: center; color: gray;&quot;&gt;
+&lt;h2 style=&quot;font-size: 1.15em; color: grey;&quot;&gt;The AI Co-Scientist Making ML More Accessible for Your Research&lt;/h2&gt;
 &lt;/div&gt;
 
 &lt;div style=&quot;text-align: center&quot;&gt;
@@ -107,4 +194,4 @@ Here are some visualizations showcasing Curie's performance on various tasks: --
       &lt;span class=&quot;na&quot;&gt;archivePrefix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{arXiv}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
       &lt;span class=&quot;na&quot;&gt;primaryClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{cs.AI}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Amber Liu</name></author><category term="machine-learning" /><category term="research" /><summary type="html">AI Co-scientist that Democratizes Machine Learning for Researchers</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Amber Liu</name></author><category term="machine-learning" /><category term="research" /><summary type="html">The AI Co-Scientist Making ML More Accessible for Your Research</summary></entry></feed>
