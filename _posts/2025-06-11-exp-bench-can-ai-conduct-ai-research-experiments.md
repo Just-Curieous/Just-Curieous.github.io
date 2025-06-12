@@ -31,7 +31,7 @@ categories: [machine-learning, research]
 
 
 <a href="https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench"> 📊 Dataset</a> | 
-<a href="https://arxiv.org/abs/2505.24785">📄 Paper</a> | <a href="https://github.com/Just-Curieous/Curie">💻 Github Link</a> 
+<a href="https://arxiv.org/abs/2505.24785">📄 Paper</a> | <a href="https://github.com/Just-Curieous/Curie">💻 Github</a> 
 </div>
 
 AI for Science is rapidly advancing, with promising early work on scientific automation—such as DeepMind's [AlphaEvolve](https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) and others highlighted in this Nature [paper](https://www.nature.com/articles/s41586-023-06221-2).
