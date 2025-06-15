@@ -1,10 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-15T16:32:47-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curie Blog</title><author><name>Amber Liu</name></author><entry><title type="html">Can AI Conduct AI Research Experiments?</title><link href="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html" rel="alternate" type="text/html" title="Can AI Conduct AI Research Experiments?" /><published>2025-06-11T00:00:00-07:00</published><updated>2025-06-11T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/exp-bench-can-ai-conduct-ai-research-experiments</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html">&lt;!-- bundle exec jekyll serve --&gt;
-
-&lt;div style=&quot;text-align: center; color: gray;&quot;&gt;
-
-&lt;/div&gt;
-
-&lt;div style=&quot;text-align: center&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-15T16:38:59-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curie Blog</title><author><name>Amber Liu</name></author><entry><title type="html">Can AI Conduct AI Research Experiments?</title><link href="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html" rel="alternate" type="text/html" title="Can AI Conduct AI Research Experiments?" /><published>2025-06-11T00:00:00-07:00</published><updated>2025-06-11T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/exp-bench-can-ai-conduct-ai-research-experiments</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html">&lt;div style=&quot;text-align: center&quot;&gt;
 
 
 &lt;p style=&quot;font-size: 0.8em; color: grey;&quot;&gt;
@@ -22,22 +16,30 @@
   &lt;a href=&quot;https://stanford.edu/~matei/&quot;&gt;Matei Zaharia&lt;/a&gt; (UC Berkeley), 
   &lt;a href=&quot;https://web.eecs.umich.edu/~chenang/&quot;&gt;Ang Chen&lt;/a&gt; (University of Michigan)
 &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div style=&quot;text-align: center; margin-bottom: 2em;&quot;&gt;
 
 
-&lt;a href=&quot;https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench&quot;&gt; 📊 Dataset&lt;/a&gt; | 
-&lt;a href=&quot;https://arxiv.org/abs/2505.24785&quot;&gt;📄 Paper&lt;/a&gt; | &lt;a href=&quot;https://github.com/Just-Curieous/Curie&quot;&gt;💻 Github&lt;/a&gt; 
+  &lt;div style=&quot;margin-bottom: 2em;&quot;&gt;
+    &lt;a href=&quot;https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench&quot; style=&quot;margin: 0 10px; padding: 8px 15px; background-color: #f8f9fa; border-radius: 5px; text-decoration: none; color: #2c3e50;&quot;&gt;📊 Dataset&lt;/a&gt;
+    &lt;a href=&quot;https://arxiv.org/abs/2505.24785&quot; style=&quot;margin: 0 10px; padding: 8px 15px; background-color: #f8f9fa; border-radius: 5px; text-decoration: none; color: #2c3e50;&quot;&gt;📄 Paper&lt;/a&gt;
+    &lt;a href=&quot;https://github.com/Just-Curieous/Curie&quot; style=&quot;margin: 0 10px; padding: 8px 15px; background-color: #f8f9fa; border-radius: 5px; text-decoration: none; color: #2c3e50;&quot;&gt;💻 Github&lt;/a&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;p&gt;AI for Science is rapidly advancing, with promising early work on scientific automation—such as DeepMind’s &lt;a href=&quot;https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/&quot;&gt;AlphaEvolve&lt;/a&gt; and others highlighted in this Nature &lt;a href=&quot;https://www.nature.com/articles/s41586-023-06221-2&quot;&gt;paper&lt;/a&gt;.
 A particularly exciting frontier is &lt;strong&gt;the automation of AI research experimentation&lt;/strong&gt;—the process of designing, executing, and analyzing experiments to advance AI itself. Unlike fields requiring physical experimentation, AI research is largely digital—well-suited for LLM-based automation.&lt;/p&gt;
 
-&lt;p&gt;Ideally, we want to provide an AI agent with a research goal—such as reproducing a result, validating a new hypothesis, or testing an ablation— along with the specific context and have the agent:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Formulate hypotheses, design experiments,&lt;/li&gt;
-  &lt;li&gt;Interpret the associated codebase and identify how to modify it,&lt;/li&gt;
-  &lt;li&gt;Configure and execute experiments under the right conditions,&lt;/li&gt;
-  &lt;li&gt;Analyze results and iteratively refine its approach based on findings&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div style=&quot;background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 2em 0;&quot;&gt;
+    &lt;p style=&quot;margin-bottom: 1em;&quot;&gt;Ideally, we want to provide an AI agent with a research goal—such as reproducing a result, validating a new hypothesis, or testing an ablation— along with the specific context and have the agent:&lt;/p&gt;
+    &lt;ul style=&quot;list-style-type: none; padding-left: 0;&quot;&gt;
+      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;• Formulate hypotheses, design experiments,&lt;/li&gt;
+      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;• Interpret the associated codebase and identify how to modify it,&lt;/li&gt;
+      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;• Configure and execute experiments under the right conditions,&lt;/li&gt;
+      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;• Analyze results and iteratively refine its approach based on findings&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
 
 &lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;&quot;&gt;
     &lt;img src=&quot;/assets/images/exp-bench-overview.png&quot; alt=&quot;EXP-Bench Overview&quot; style=&quot;width: 100%; height: auto; display: block; margin: 0 auto;&quot; /&gt;
@@ -51,7 +53,7 @@ A particularly exciting frontier is &lt;strong&gt;the automation of AI research 
 
 &lt;h2 id=&quot;our-contribution-exp-bench&quot;&gt;Our Contribution: EXP-Bench&lt;/h2&gt;
 
-&lt;p&gt;To address this challenge, we introduce &lt;strong&gt;EXP-Bench&lt;/strong&gt;, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in &lt;strong&gt;conducting end-to-end research experiments&lt;/strong&gt;—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.&lt;/p&gt;
+&lt;p&gt;To address this challenge, we introduce &lt;strong&gt;EXP-Bench&lt;/strong&gt;, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in &lt;strong&gt;conducting end-to-end AI research experiments&lt;/strong&gt;—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.&lt;/p&gt;
 
 &lt;p&gt;Using this approach, we distilled &lt;em&gt;461 experiments from NeurIPS and ICLR papers&lt;/em&gt;—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.&lt;/p&gt;
 
@@ -64,13 +66,15 @@ A particularly exciting frontier is &lt;strong&gt;the automation of AI research 
 
 &lt;h2 id=&quot;what-exp-bench-reveals-about-todays-ai-agents&quot;&gt;What EXP-Bench Reveals About Today’s AI Agents&lt;/h2&gt;
 
-&lt;p&gt;We tested leading agents, including &lt;em&gt;OpenHands w/ Claude Sonnet 3.7&lt;/em&gt;, and found that while they can earn partial credit for individual steps like experiment design or coding (~20-35% success), their ability to &lt;em&gt;complete a full, executable experiment&lt;/em&gt; is nearly non-existent—a mere 0.5% success rate.
-Our analysis pinpointed several critical weaknesses:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;em&gt;Limited Long-Horizon Planning and Reasoning&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Inability to Handle Open-Ended and Ambiguous Tasks&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Difficulty with Code Execution and Debugging&lt;/em&gt;&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;We tested leading agents, including &lt;em&gt;OpenHands w/ Claude Sonnet 3.7&lt;/em&gt;, and found that while they can earn partial credit for individual steps like experiment design or coding (~20-35% success), their ability to &lt;em&gt;complete a full, executable experiment&lt;/em&gt; is nearly non-existent—a mere 0.5% success rate.&lt;/p&gt;
+&lt;div style=&quot;background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 2em 0;&quot;&gt;
+    &lt;p style=&quot;margin-bottom: 1em;&quot;&gt;Our analysis pinpointed several critical weaknesses:&lt;/p&gt;
+    &lt;ol style=&quot;padding-left: 20px;&quot;&gt;
+      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;&lt;em&gt;Limited Long-Horizon Planning and Reasoning&lt;/em&gt;&lt;/li&gt;
+      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;&lt;em&gt;Inability to Handle Open-Ended and Ambiguous Tasks&lt;/em&gt;&lt;/li&gt;
+      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;&lt;em&gt;Difficulty with Code Execution and Debugging&lt;/em&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/div&gt;
 
 &lt;p&gt;These results highlight just how far we still are from our goal of automation of research experimentation. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve their ability to conduct AI research experiments.&lt;/p&gt;
 
@@ -82,10 +86,10 @@ Our analysis pinpointed several critical weaknesses:&lt;/p&gt;
 
 &lt;h2 id=&quot;explore-our-work&quot;&gt;Explore Our Work&lt;/h2&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;📑 &lt;a href=&quot;https://arxiv.org/abs/2505.24785&quot;&gt;Full paper&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;🗃️ &lt;a href=&quot;https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench&quot;&gt;Open-sourced dataset&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;div style=&quot;display: flex; justify-content: center; gap: 20px; margin: 2em 0;&quot;&gt;
+    &lt;a href=&quot;https://arxiv.org/abs/2505.24785&quot; style=&quot;padding: 10px 20px; background-color: #2c3e50; color: white; text-decoration: none; border-radius: 5px;&quot;&gt;📑 Full paper&lt;/a&gt;
+    &lt;a href=&quot;https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench&quot; style=&quot;padding: 10px 20px; background-color: #2c3e50; color: white; text-decoration: none; border-radius: 5px;&quot;&gt;🗃️ Open-sourced dataset&lt;/a&gt;
+  &lt;/div&gt;
 
 &lt;div class=&quot;language-bib highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;@article&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;kon2025expbenchaiconductai&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
       &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;{EXP-Bench: Can AI Conduct AI Research Experiments?}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
