@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-11T22:55:57-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curie Blog</title><author><name>Amber Liu</name></author><entry><title type="html">Can AI Conduct AI Research Experiments?</title><link href="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html" rel="alternate" type="text/html" title="Can AI Conduct AI Research Experiments?" /><published>2025-06-11T00:00:00-07:00</published><updated>2025-06-11T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/exp-bench-can-ai-conduct-ai-research-experiments</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html">&lt;!-- bundle exec jekyll serve --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-15T16:32:47-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curie Blog</title><author><name>Amber Liu</name></author><entry><title type="html">Can AI Conduct AI Research Experiments?</title><link href="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html" rel="alternate" type="text/html" title="Can AI Conduct AI Research Experiments?" /><published>2025-06-11T00:00:00-07:00</published><updated>2025-06-11T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/exp-bench-can-ai-conduct-ai-research-experiments</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html">&lt;!-- bundle exec jekyll serve --&gt;
 
 &lt;div style=&quot;text-align: center; color: gray;&quot;&gt;
 
@@ -28,9 +28,24 @@
 &lt;a href=&quot;https://arxiv.org/abs/2505.24785&quot;&gt;📄 Paper&lt;/a&gt; | &lt;a href=&quot;https://github.com/Just-Curieous/Curie&quot;&gt;💻 Github&lt;/a&gt; 
 &lt;/div&gt;
 
-&lt;p&gt;AI for Science is rapidly advancing, with promising early work on scientific automation—such as DeepMind’s &lt;a href=&quot;https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/&quot;&gt;AlphaEvolve&lt;/a&gt; and others highlighted in this Nature &lt;a href=&quot;https://www.nature.com/articles/s41586-023-06221-2&quot;&gt;paper&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;AI for Science is rapidly advancing, with promising early work on scientific automation—such as DeepMind’s &lt;a href=&quot;https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/&quot;&gt;AlphaEvolve&lt;/a&gt; and others highlighted in this Nature &lt;a href=&quot;https://www.nature.com/articles/s41586-023-06221-2&quot;&gt;paper&lt;/a&gt;.
+A particularly exciting frontier is &lt;strong&gt;the automation of AI research experimentation&lt;/strong&gt;—the process of designing, executing, and analyzing experiments to advance AI itself. Unlike fields requiring physical experimentation, AI research is largely digital—well-suited for LLM-based automation.&lt;/p&gt;
 
-&lt;p&gt;Closely related, the automation of AI research represents a key opportunity to accelerate both the advancement of AI itself and broader scientific progress. Unlike fields requiring physical experimentation, AI research is largely digital—well-suited for LLM-based automation.&lt;/p&gt;
+&lt;p&gt;Ideally, we want to provide an AI agent with a research goal—such as reproducing a result, validating a new hypothesis, or testing an ablation— along with the specific context and have the agent:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Formulate hypotheses, design experiments,&lt;/li&gt;
+  &lt;li&gt;Interpret the associated codebase and identify how to modify it,&lt;/li&gt;
+  &lt;li&gt;Configure and execute experiments under the right conditions,&lt;/li&gt;
+  &lt;li&gt;Analyze results and iteratively refine its approach based on findings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;&quot;&gt;
+    &lt;img src=&quot;/assets/images/exp-bench-overview.png&quot; alt=&quot;EXP-Bench Overview&quot; style=&quot;width: 100%; height: auto; display: block; margin: 0 auto;&quot; /&gt;
+    &lt;p style=&quot;font-size: 0.8em; margin-top: 10px; color: grey;&quot;&gt;
+        Figure 1. EXP-Bench evaluates AI agents on research experiment tasks extracted semi-autonomously from peer-reviewed AI papers.
+    &lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Achieving this vision requires benchmarks that evaluate agents in real-world research scenarios. But how do we define those scenarios in a way that’s representative, reproducible, and gradable?&lt;/p&gt;
 
 &lt;p&gt;Intuitively, peer-reviewed AI papers (e.g., in NeurIPS) along with their open-source codebases, offer a rich source of completed experiments that could, in theory, be repurposed to evaluate AI capabilities in research automation. In practice, however, extracting these tasks is difficult. Papers often present a polished narrative that omits intermediate steps, while critical details—such as the precise conditions under which results hold—are scattered across dense text, supplementary materials, and sprawling repositories.&lt;/p&gt;
 
@@ -41,16 +56,9 @@
 &lt;p&gt;Using this approach, we distilled &lt;em&gt;461 experiments from NeurIPS and ICLR papers&lt;/em&gt;—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.&lt;/p&gt;
 
 &lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;&quot;&gt;
-    &lt;img src=&quot;/assets/images/exp-bench-overview.png&quot; alt=&quot;EXP-Bench Overview&quot; style=&quot;width: 100%; height: auto; display: block; margin: 0 auto;&quot; /&gt;
+    &lt;img src=&quot;/assets/images/exp-construction.png&quot; alt=&quot;EXP-Bench Construction&quot; style=&quot;width: 100%; height: auto; display: block; margin: 0 auto;&quot; /&gt;
     &lt;p style=&quot;font-size: 0.8em; margin-top: 10px; color: grey;&quot;&gt;
-        Figure 1. EXP-Bench evaluates AI agents on research experiment tasks extracted semi-autonomously from peer-reviewed AI papers.
-    &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;&quot;&gt;
-    &lt;img src=&quot;/assets/images/exp-bench-example.png&quot; alt=&quot;EXP-Bench Example&quot; style=&quot;width: 100%; height: auto; display: block; margin: 0 auto;&quot; /&gt;
-    &lt;p style=&quot;font-size: 0.8em; margin-top: 10px; color: grey;&quot;&gt;
-        Figure 2. One AI research task example from ICLR 2024 MogaNet [1].
+        Figure 2. Our semi-automated pipeline for constructing EXP-Bench from published papers.
     &lt;/p&gt;
 &lt;/div&gt;
 
@@ -59,9 +67,9 @@
 &lt;p&gt;We tested leading agents, including &lt;em&gt;OpenHands w/ Claude Sonnet 3.7&lt;/em&gt;, and found that while they can earn partial credit for individual steps like experiment design or coding (~20-35% success), their ability to &lt;em&gt;complete a full, executable experiment&lt;/em&gt; is nearly non-existent—a mere 0.5% success rate.
 Our analysis pinpointed several critical weaknesses:&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;&lt;strong&gt;Limited Long-Horizon Planning and Reasoning&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Inability to Handle Open-Ended and Ambiguous Tasks&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Difficulty with Code Execution and Debugging&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Limited Long-Horizon Planning and Reasoning&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Inability to Handle Open-Ended and Ambiguous Tasks&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Difficulty with Code Execution and Debugging&lt;/em&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;These results highlight just how far we still are from our goal of automation of research experimentation. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve their ability to conduct AI research experiments.&lt;/p&gt;
@@ -72,7 +80,7 @@ Our analysis pinpointed several critical weaknesses:&lt;/p&gt;
 
 &lt;p&gt;That said, much work remains. While EXP-Bench currently focuses on machine learning papers, it does not yet address domains that require interaction with the physical world or support tasks involving true scientific invention. Expanding to those areas—and capturing the creativity, uncertainty, and iteration of real-world discovery—remains an open and exciting challenge.&lt;/p&gt;
 
-&lt;h2 id=&quot;explore-our-work&quot;&gt;Explore Our Work:&lt;/h2&gt;
+&lt;h2 id=&quot;explore-our-work&quot;&gt;Explore Our Work&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;📑 &lt;a href=&quot;https://arxiv.org/abs/2505.24785&quot;&gt;Full paper&lt;/a&gt;&lt;/li&gt;

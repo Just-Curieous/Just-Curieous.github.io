@@ -102,7 +102,7 @@
                             </a>
                             
                                 
-                                    <ul><li><a href="#our-contribution-exp-bench" onclick="mobilePageScrollToAnchor(this)" >Our Contribution: EXP-Bench</a></li><li><a href="#what-exp-bench-reveals-about-todays-ai-agents" onclick="mobilePageScrollToAnchor(this)" >What EXP-Bench Reveals About Today’s AI Agents</a></li><li><a href="#looking-forward" onclick="mobilePageScrollToAnchor(this)" >Looking Forward</a></li><li><a href="#explore-our-work" onclick="mobilePageScrollToAnchor(this)" >Explore Our Work:</a></li></ul>
+                                    <ul><li><a href="#our-contribution-exp-bench" onclick="mobilePageScrollToAnchor(this)" >Our Contribution: EXP-Bench</a></li><li><a href="#what-exp-bench-reveals-about-todays-ai-agents" onclick="mobilePageScrollToAnchor(this)" >What EXP-Bench Reveals About Today’s AI Agents</a></li><li><a href="#looking-forward" onclick="mobilePageScrollToAnchor(this)" >Looking Forward</a></li><li><a href="#explore-our-work" onclick="mobilePageScrollToAnchor(this)" >Explore Our Work</a></li></ul>
 
                                 
                             
@@ -169,9 +169,24 @@
 <a href="https://arxiv.org/abs/2505.24785">📄 Paper</a> | <a href="https://github.com/Just-Curieous/Curie">💻 Github</a> 
 </div>
 
-<p>AI for Science is rapidly advancing, with promising early work on scientific automation—such as DeepMind’s <a href="https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/">AlphaEvolve</a> and others highlighted in this Nature <a href="https://www.nature.com/articles/s41586-023-06221-2">paper</a>.</p>
+<p>AI for Science is rapidly advancing, with promising early work on scientific automation—such as DeepMind’s <a href="https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/">AlphaEvolve</a> and others highlighted in this Nature <a href="https://www.nature.com/articles/s41586-023-06221-2">paper</a>.
+A particularly exciting frontier is <strong>the automation of AI research experimentation</strong>—the process of designing, executing, and analyzing experiments to advance AI itself. Unlike fields requiring physical experimentation, AI research is largely digital—well-suited for LLM-based automation.</p>
 
-<p>Closely related, the automation of AI research represents a key opportunity to accelerate both the advancement of AI itself and broader scientific progress. Unlike fields requiring physical experimentation, AI research is largely digital—well-suited for LLM-based automation.</p>
+<p>Ideally, we want to provide an AI agent with a research goal—such as reproducing a result, validating a new hypothesis, or testing an ablation— along with the specific context and have the agent:</p>
+<ul>
+  <li>Formulate hypotheses, design experiments,</li>
+  <li>Interpret the associated codebase and identify how to modify it,</li>
+  <li>Configure and execute experiments under the right conditions,</li>
+  <li>Analyze results and iteratively refine its approach based on findings</li>
+</ul>
+
+<div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;">
+    <img src="/assets/images/exp-bench-overview.png" alt="EXP-Bench Overview" style="width: 100%; height: auto; display: block; margin: 0 auto;" />
+    <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
+        Figure 1. EXP-Bench evaluates AI agents on research experiment tasks extracted semi-autonomously from peer-reviewed AI papers.
+    </p>
+</div>
+<p>Achieving this vision requires benchmarks that evaluate agents in real-world research scenarios. But how do we define those scenarios in a way that’s representative, reproducible, and gradable?</p>
 
 <p>Intuitively, peer-reviewed AI papers (e.g., in NeurIPS) along with their open-source codebases, offer a rich source of completed experiments that could, in theory, be repurposed to evaluate AI capabilities in research automation. In practice, however, extracting these tasks is difficult. Papers often present a polished narrative that omits intermediate steps, while critical details—such as the precise conditions under which results hold—are scattered across dense text, supplementary materials, and sprawling repositories.</p>
 
@@ -182,16 +197,9 @@
 <p>Using this approach, we distilled <em>461 experiments from NeurIPS and ICLR papers</em>—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.</p>
 
 <div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;">
-    <img src="/assets/images/exp-bench-overview.png" alt="EXP-Bench Overview" style="width: 100%; height: auto; display: block; margin: 0 auto;" />
+    <img src="/assets/images/exp-construction.png" alt="EXP-Bench Construction" style="width: 100%; height: auto; display: block; margin: 0 auto;" />
     <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
-        Figure 1. EXP-Bench evaluates AI agents on research experiment tasks extracted semi-autonomously from peer-reviewed AI papers.
-    </p>
-</div>
-
-<div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;">
-    <img src="/assets/images/exp-bench-example.png" alt="EXP-Bench Example" style="width: 100%; height: auto; display: block; margin: 0 auto;" />
-    <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
-        Figure 2. One AI research task example from ICLR 2024 MogaNet [1].
+        Figure 2. Our semi-automated pipeline for constructing EXP-Bench from published papers.
     </p>
 </div>
 
@@ -200,9 +208,9 @@
 <p>We tested leading agents, including <em>OpenHands w/ Claude Sonnet 3.7</em>, and found that while they can earn partial credit for individual steps like experiment design or coding (~20-35% success), their ability to <em>complete a full, executable experiment</em> is nearly non-existent—a mere 0.5% success rate.
 Our analysis pinpointed several critical weaknesses:</p>
 <ol>
-  <li><strong>Limited Long-Horizon Planning and Reasoning</strong></li>
-  <li><strong>Inability to Handle Open-Ended and Ambiguous Tasks</strong></li>
-  <li><strong>Difficulty with Code Execution and Debugging</strong></li>
+  <li><em>Limited Long-Horizon Planning and Reasoning</em></li>
+  <li><em>Inability to Handle Open-Ended and Ambiguous Tasks</em></li>
+  <li><em>Difficulty with Code Execution and Debugging</em></li>
 </ol>
 
 <p>These results highlight just how far we still are from our goal of automation of research experimentation. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve their ability to conduct AI research experiments.</p>
@@ -213,7 +221,7 @@ Our analysis pinpointed several critical weaknesses:</p>
 
 <p>That said, much work remains. While EXP-Bench currently focuses on machine learning papers, it does not yet address domains that require interaction with the physical world or support tasks involving true scientific invention. Expanding to those areas—and capturing the creativity, uncertainty, and iteration of real-world discovery—remains an open and exciting challenge.</p>
 
-<h2 id="explore-our-work">Explore Our Work:</h2>
+<h2 id="explore-our-work">Explore Our Work</h2>
 
 <ul>
   <li>📑 <a href="https://arxiv.org/abs/2505.24785">Full paper</a></li>
@@ -396,7 +404,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2025-06-11 22:55:57 -0700"
+        "time": "2025-06-15 16:32:47 -0700"
     },
     "basePath": "",
     "book": {

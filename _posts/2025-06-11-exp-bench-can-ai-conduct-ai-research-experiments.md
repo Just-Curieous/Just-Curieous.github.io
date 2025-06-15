@@ -35,16 +35,16 @@ categories: [machine-learning, research]
 </div>
 
 AI for Science is rapidly advancing, with promising early work on scientific automation—such as DeepMind's [AlphaEvolve](https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) and others highlighted in this Nature [paper](https://www.nature.com/articles/s41586-023-06221-2).
+A particularly exciting frontier is **the automation of AI research experimentation**—the process of designing, executing, and analyzing experiments to advance AI itself. Unlike fields requiring physical experimentation, AI research is largely digital—well-suited for LLM-based automation. 
 
-Closely related, the automation of AI research represents a key opportunity to accelerate both the advancement of AI itself and broader scientific progress. Unlike fields requiring physical experimentation, AI research is largely digital—well-suited for LLM-based automation. 
 
-Intuitively, peer-reviewed AI papers (e.g., in NeurIPS) along with their open-source codebases, offer a rich source of completed experiments that could, in theory, be repurposed to evaluate AI capabilities in research automation. In practice, however, extracting these tasks is difficult. Papers often present a polished narrative that omits intermediate steps, while critical details—such as the precise conditions under which results hold—are scattered across dense text, supplementary materials, and sprawling repositories.
 
-## Our Contribution: EXP-Bench
+Ideally, we want to provide an AI agent with a research goal—such as reproducing a result, validating a new hypothesis, or testing an ablation— along with the specific context and have the agent:
+- Formulate hypotheses, design experiments,
+- Interpret the associated codebase and identify how to modify it,
+- Configure and execute experiments under the right conditions,
+- Analyze results and iteratively refine its approach based on findings
 
-To address this challenge, we introduce **EXP-Bench**, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in **conducting end-to-end research experiments**—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.
-
-Using this approach, we distilled *461 experiments from NeurIPS and ICLR papers*—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.
 
 <div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;">
     <img src="/assets/images/exp-bench-overview.png" alt="EXP-Bench Overview" style="width: 100%; height: auto; display: block; margin: 0 auto;">
@@ -52,21 +52,37 @@ Using this approach, we distilled *461 experiments from NeurIPS and ICLR papers*
         Figure 1. EXP-Bench evaluates AI agents on research experiment tasks extracted semi-autonomously from peer-reviewed AI papers.
     </p>
 </div>
+Achieving this vision requires benchmarks that evaluate agents in real-world research scenarios. But how do we define those scenarios in a way that’s representative, reproducible, and gradable?
+
+
+
+Intuitively, peer-reviewed AI papers (e.g., in NeurIPS) along with their open-source codebases, offer a rich source of completed experiments that could, in theory, be repurposed to evaluate AI capabilities in research automation. In practice, however, extracting these tasks is difficult. Papers often present a polished narrative that omits intermediate steps, while critical details—such as the precise conditions under which results hold—are scattered across dense text, supplementary materials, and sprawling repositories.
+
+
+
+## Our Contribution: EXP-Bench
+
+To address this challenge, we introduce **EXP-Bench**, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in **conducting end-to-end research experiments**—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.
+
+Using this approach, we distilled *461 experiments from NeurIPS and ICLR papers*—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.
+
+ 
 
 <div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;">
-    <img src="/assets/images/exp-bench-example.png" alt="EXP-Bench Example" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+    <img src="/assets/images/exp-construction.png" alt="EXP-Bench Construction" style="width: 100%; height: auto; display: block; margin: 0 auto;">
     <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
-        Figure 2. One AI research task example from ICLR 2024 MogaNet [1].
+        Figure 2. Our semi-automated pipeline for constructing EXP-Bench from published papers.
     </p>
 </div>
 
-## What EXP-Bench Reveals About Today’s AI Agents
+
+## What EXP-Bench Reveals About Today's AI Agents
 
 We tested leading agents, including *OpenHands w/ Claude Sonnet 3.7*, and found that while they can earn partial credit for individual steps like experiment design or coding (~20-35% success), their ability to *complete a full, executable experiment* is nearly non-existent—a mere 0.5% success rate.
 Our analysis pinpointed several critical weaknesses:
-1. **Limited Long-Horizon Planning and Reasoning**
-2. **Inability to Handle Open-Ended and Ambiguous Tasks**
-3. **Difficulty with Code Execution and Debugging**
+1. *Limited Long-Horizon Planning and Reasoning*
+2. *Inability to Handle Open-Ended and Ambiguous Tasks*
+3. *Difficulty with Code Execution and Debugging*
 
 
 These results highlight just how far we still are from our goal of automation of research experimentation. By identifying these bottlenecks and providing realistic step-by-step experiment procedures, EXP-Bench serves as a vital tool for future AI agents to improve their ability to conduct AI research experiments.
@@ -79,8 +95,7 @@ That said, much work remains. While EXP-Bench currently focuses on machine learn
 
 
 
-## Explore Our Work:
-
+## Explore Our Work
 
 - 📑 [Full paper](https://arxiv.org/abs/2505.24785)
 - 🗃️ [Open-sourced dataset](https://github.com/Just-Curieous/Curie/tree/main/benchmark/exp_bench)
