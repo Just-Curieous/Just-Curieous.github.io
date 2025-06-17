@@ -4,6 +4,7 @@ title: "Can AI Conduct AI Research Experiments?"
 date: 2025-06-11
 categories: [machine-learning, research]
 ---
+<!-- bundle exec jekyll serve -->
 
 
 <div style="text-align: center">
@@ -67,7 +68,7 @@ Intuitively, peer-reviewed AI papers (e.g., in NeurIPS) along with their open-so
 
 ## Our Contribution: EXP-Bench
 
-To address this challenge, we introduce **EXP-Bench**, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in **conducting end-to-end AI research experiments**—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.
+To address this challenge, we introduce **EXP-Bench**, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in **conducting end-to-end AI research experiments**—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline (Figure 2) that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.
 
 Using this approach, we distilled *461 experiments from NeurIPS and ICLR papers*—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.
 
@@ -78,8 +79,17 @@ Using this approach, we distilled *461 experiments from NeurIPS and ICLR papers*
     <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
         Figure 2. Our semi-automated pipeline for constructing EXP-Bench from published papers.
     </p>
-</div>
+    <p style="font-size: 0.8em; margin-top: -15px; color: grey;"> 
+            See Figure 3 for an example AI research task extracted through this pipeline.
+    </p>
 
+</div>
+<div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;"> 
+    <img src="/assets/images/exp-bench-example.png" alt="EXP-Bench Example" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
+        Figure 3. One AI research task example from ICLR 2024 MogaNet [1].
+    </p>
+</div>
 
 ## What EXP-Bench Reveals About Today's AI Agents
 
@@ -88,8 +98,8 @@ We tested leading agents, including *OpenHands w/ Claude Sonnet 3.7*, and found 
     <p style="margin-bottom: 1em;">Our analysis pinpointed several critical weaknesses:</p>
     <ol style="padding-left: 20px;">
       <li style="margin-bottom: 0.5em;"><em>Limited Long-Horizon Planning and Reasoning</em></li>
-      <li style="margin-bottom: 0.5em;"><em>Inability to Handle Open-Ended and Ambiguous Tasks</em></li>
-      <li style="margin-bottom: 0.5em;"><em>Difficulty with Code Execution and Debugging</em></li>
+      <li style="margin-bottom: 0.5em;"><em>Inability to Handle Open-Ended and Ambiguous Tasks (35.9%)</em></li>
+      <li style="margin-bottom: 0.5em;"><em>Difficulty with Environment Setup (41.3%) and Code Debugging (29.8%)</em></li>
     </ol>
   </div>
 

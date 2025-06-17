@@ -139,7 +139,9 @@
                         <h1 id="/machine-learning/research/exp-bench-can-ai-conduct-ai-research-experiments">Can AI Conduct AI Research Experiments?</h1>
                     
 
-                    <div style="text-align: center">
+                    <!-- bundle exec jekyll serve -->
+
+<div style="text-align: center">
 
 
 <p style="font-size: 0.8em; color: grey;">
@@ -194,7 +196,7 @@ A particularly exciting frontier is <strong>the automation of AI research experi
 
 <h2 id="our-contribution-exp-bench">Our Contribution: EXP-Bench</h2>
 
-<p>To address this challenge, we introduce <strong>EXP-Bench</strong>, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in <strong>conducting end-to-end AI research experiments</strong>—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.</p>
+<p>To address this challenge, we introduce <strong>EXP-Bench</strong>, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in <strong>conducting end-to-end AI research experiments</strong>—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline (Figure 2) that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.</p>
 
 <p>Using this approach, we distilled <em>461 experiments from NeurIPS and ICLR papers</em>—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.</p>
 
@@ -202,6 +204,16 @@ A particularly exciting frontier is <strong>the automation of AI research experi
     <img src="/assets/images/exp-construction.png" alt="EXP-Bench Construction" style="width: 100%; height: auto; display: block; margin: 0 auto;" />
     <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
         Figure 2. Our semi-automated pipeline for constructing EXP-Bench from published papers.
+    </p>
+    <p style="font-size: 0.8em; margin-top: -15px; color: grey;"> 
+            See Figure 3 for an example AI research task extracted through this pipeline.
+    </p>
+
+</div>
+<div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;"> 
+    <img src="/assets/images/exp-bench-example.png" alt="EXP-Bench Example" style="width: 100%; height: auto; display: block; margin: 0 auto;" />
+    <p style="font-size: 0.8em; margin-top: 10px; color: grey;">
+        Figure 3. One AI research task example from ICLR 2024 MogaNet [1].
     </p>
 </div>
 
@@ -212,8 +224,8 @@ A particularly exciting frontier is <strong>the automation of AI research experi
     <p style="margin-bottom: 1em;">Our analysis pinpointed several critical weaknesses:</p>
     <ol style="padding-left: 20px;">
       <li style="margin-bottom: 0.5em;"><em>Limited Long-Horizon Planning and Reasoning</em></li>
-      <li style="margin-bottom: 0.5em;"><em>Inability to Handle Open-Ended and Ambiguous Tasks</em></li>
-      <li style="margin-bottom: 0.5em;"><em>Difficulty with Code Execution and Debugging</em></li>
+      <li style="margin-bottom: 0.5em;"><em>Inability to Handle Open-Ended and Ambiguous Tasks (35.9%)</em></li>
+      <li style="margin-bottom: 0.5em;"><em>Difficulty with Environment Setup (41.3%) and Code Debugging (29.8%)</em></li>
     </ol>
   </div>
 
@@ -409,7 +421,7 @@ window.MathJax = {
     },
     "gitbook": {
         "version": "3.2.3",
-        "time": "2025-06-15 16:38:59 -0700"
+        "time": "2025-06-16 17:45:48 -0700"
     },
     "basePath": "",
     "book": {

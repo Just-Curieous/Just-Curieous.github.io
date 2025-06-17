@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-15T16:38:59-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curie Blog</title><author><name>Amber Liu</name></author><entry><title type="html">Can AI Conduct AI Research Experiments?</title><link href="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html" rel="alternate" type="text/html" title="Can AI Conduct AI Research Experiments?" /><published>2025-06-11T00:00:00-07:00</published><updated>2025-06-11T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/exp-bench-can-ai-conduct-ai-research-experiments</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html">&lt;div style=&quot;text-align: center&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-16T17:45:48-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Curie Blog</title><author><name>Amber Liu</name></author><entry><title type="html">Can AI Conduct AI Research Experiments?</title><link href="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html" rel="alternate" type="text/html" title="Can AI Conduct AI Research Experiments?" /><published>2025-06-11T00:00:00-07:00</published><updated>2025-06-11T00:00:00-07:00</updated><id>http://localhost:4000/machine-learning/research/exp-bench-can-ai-conduct-ai-research-experiments</id><content type="html" xml:base="http://localhost:4000/machine-learning/research/2025-06-11-exp-bench-can-ai-conduct-ai-research-experiments.html">&lt;!-- bundle exec jekyll serve --&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
 
 
 &lt;p style=&quot;font-size: 0.8em; color: grey;&quot;&gt;
@@ -53,7 +55,7 @@ A particularly exciting frontier is &lt;strong&gt;the automation of AI research 
 
 &lt;h2 id=&quot;our-contribution-exp-bench&quot;&gt;Our Contribution: EXP-Bench&lt;/h2&gt;
 
-&lt;p&gt;To address this challenge, we introduce &lt;strong&gt;EXP-Bench&lt;/strong&gt;, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in &lt;strong&gt;conducting end-to-end AI research experiments&lt;/strong&gt;—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.&lt;/p&gt;
+&lt;p&gt;To address this challenge, we introduce &lt;strong&gt;EXP-Bench&lt;/strong&gt;, a new benchmark designed to make the ever-expanding landscape of published research more accessible for evaluating AI agents in &lt;strong&gt;conducting end-to-end AI research experiments&lt;/strong&gt;—from hypothesis to experimental setup to conclusion, as shown in Figure 1. We develop a semi-automated pipeline (Figure 2) that uses multimodal and agentic approaches to reconstruct experiments from fragmented and dense sources (e.g., coding agents identify setups by conditioning on ground-truth outcomes and leveraging the full codebase—reducing the task to a constrained search), while interleaving these steps with lightweight human validation to ensure correctness.&lt;/p&gt;
 
 &lt;p&gt;Using this approach, we distilled &lt;em&gt;461 experiments from NeurIPS and ICLR papers&lt;/em&gt;—spanning domains such as vision, RL, and computational biology—resulting in over 12,000 gradable subtasks.&lt;/p&gt;
 
@@ -61,6 +63,16 @@ A particularly exciting frontier is &lt;strong&gt;the automation of AI research 
     &lt;img src=&quot;/assets/images/exp-construction.png&quot; alt=&quot;EXP-Bench Construction&quot; style=&quot;width: 100%; height: auto; display: block; margin: 0 auto;&quot; /&gt;
     &lt;p style=&quot;font-size: 0.8em; margin-top: 10px; color: grey;&quot;&gt;
         Figure 2. Our semi-automated pipeline for constructing EXP-Bench from published papers.
+    &lt;/p&gt;
+    &lt;p style=&quot;font-size: 0.8em; margin-top: -15px; color: grey;&quot;&gt; 
+            See Figure 3 for an example AI research task extracted through this pipeline.
+    &lt;/p&gt;
+
+&lt;/div&gt;
+&lt;div style=&quot;text-align: center; max-width: 800px; margin: 0 auto; padding: 0 15px;&quot;&gt; 
+    &lt;img src=&quot;/assets/images/exp-bench-example.png&quot; alt=&quot;EXP-Bench Example&quot; style=&quot;width: 100%; height: auto; display: block; margin: 0 auto;&quot; /&gt;
+    &lt;p style=&quot;font-size: 0.8em; margin-top: 10px; color: grey;&quot;&gt;
+        Figure 3. One AI research task example from ICLR 2024 MogaNet [1].
     &lt;/p&gt;
 &lt;/div&gt;
 
@@ -71,8 +83,8 @@ A particularly exciting frontier is &lt;strong&gt;the automation of AI research 
     &lt;p style=&quot;margin-bottom: 1em;&quot;&gt;Our analysis pinpointed several critical weaknesses:&lt;/p&gt;
     &lt;ol style=&quot;padding-left: 20px;&quot;&gt;
       &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;&lt;em&gt;Limited Long-Horizon Planning and Reasoning&lt;/em&gt;&lt;/li&gt;
-      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;&lt;em&gt;Inability to Handle Open-Ended and Ambiguous Tasks&lt;/em&gt;&lt;/li&gt;
-      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;&lt;em&gt;Difficulty with Code Execution and Debugging&lt;/em&gt;&lt;/li&gt;
+      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;&lt;em&gt;Inability to Handle Open-Ended and Ambiguous Tasks (35.9%)&lt;/em&gt;&lt;/li&gt;
+      &lt;li style=&quot;margin-bottom: 0.5em;&quot;&gt;&lt;em&gt;Difficulty with Environment Setup (41.3%) and Code Debugging (29.8%)&lt;/em&gt;&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/div&gt;
 

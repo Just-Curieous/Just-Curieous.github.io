@@ -9,8 +9,20 @@ permalink: /
 <h2 style="font-size: 1.15em; color: grey;">Toward Rigorous and Automated Scientific Experimentation with AI Agents</h2>
 </div>
 
+
+<div style="text-align: center; margin-bottom: 2em;">
+
+
+  <div style="margin-bottom: 2em;">
+    <a href="https://arxiv.org/abs/2502.16069" style="margin: 0 10px; padding: 8px 15px; background-color: #f8f9fa; border-radius: 5px; text-decoration: none; color: #2c3e50;">📄 Paper</a>
+    <a href="https://github.com/Just-Curieous/Curie" style="margin: 0 10px; padding: 8px 15px; background-color: #f8f9fa; border-radius: 5px; text-decoration: none; color: #2c3e50;">💻 Github</a>
+    <a href="http://demo.just-curieous.com:5000/" style="margin: 0 10px; padding: 8px 15px; background-color: #f8f9fa; border-radius: 5px; text-decoration: none; color: #2c3e50;">🎮 Demo</a>
+
+  </div>
+</div>
+
+
 <div style="text-align: center">
-<a href="https://arxiv.org/abs/2502.16069">📄 Paper Link</a> | <a href="https://github.com/Just-Curieous/Curie">💻 Github Link</a> | <a href="http://demo.just-curieous.com:5000/"> 🎮 Demo Link</a>
 
 <p style="font-size: 0.8em; color: grey;">
 <a href="https://www.cs-pk.com/">Patrick Tser Jern Kon</a><sup>*</sup>, <a href="https://websites.umich.edu/~amberljc/">Jiachen Liu</a><sup>*</sup> (<sup>*</sup> Equal Contribution) <br>
