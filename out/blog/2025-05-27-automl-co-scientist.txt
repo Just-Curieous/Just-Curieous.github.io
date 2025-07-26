@@ -1,0 +1,109 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+4:["slug","2025-05-27-automl-co-scientist","d"]
+0:["VmFF9GRRx2fVXLFcnt8Y7",[[["",{"children":["blog",{"children":[["slug","2025-05-27-automl-co-scientist","d"],{"children":["__PAGE__?{\"slug\":\"2025-05-27-automl-co-scientist\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["slug","2025-05-27-automl-co-scientist","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":[["$","link","0",{"rel":"stylesheet","href":"/Just-Curieous.github.io/_next/static/css/60da0364ed65e94f.css","precedence":"next","crossOrigin":"$undefined"}]]}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__variable_75bf14 __variable_76cf36 antialiased","children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/Just-Curieous.github.io/_next/static/css/4822df9fc09e4420.css","precedence":"next","crossOrigin":"$undefined"}]],[null,"$L6"]]]]]
+7:I[231,["231","static/chunks/231-0bc26e92674236f9.js","308","static/chunks/app/blog/%5Bslug%5D/page-5eca7ec39609f401.js"],""]
+8:T2106,<div style="text-align: center;">
+<h2 style="font-size: 1.15em;">The AI Co-Scientist Making ML More Accessible for Your Research</h2>
+</div>
+
+
+<div style="text-align: center; margin-bottom: 2em;">
+  <div style="margin-bottom: 2em;">
+    <a href="https://github.com/Just-Curieous/Curie" style="margin: 0 10px; padding: 8px 15px; background-color: #f8f9fa; border-radius: 5px; text-decoration: none; color: #2c3e50;">💻 Github Link</a>
+    <a href="https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench" style="margin: 0 10px; padding: 8px 15px; background-color: #f8f9fa; border-radius: 5px; text-decoration: none; color: #2c3e50;">📒 Use Cases</a>
+    <a href="https://arxiv.org/abs/2502.16069" style="margin: 0 10px; padding: 8px 15px; background-color: #f8f9fa; border-radius: 5px; text-decoration: none; color: #2c3e50;">📄 Paper Link</a>
+  </div>
+</div>
+
+
+<p>In our previous <a href="https://www.just-curieous.com/">post</a>, we introduced <a href="https://github.com/Just-Curieous/Curie">Curie</a>: an open-sourced AI co-scientist that automates experimentation and accelerate the journey from idea to validation. Today, we're thrilled to introduce Curie's AutoML feature, designed to help researchers <strong>rapidly test hypotheses</strong> and unlock insights from their <strong>valuable data</strong>.</p>
+<p>We built this AutoML feature after personally seeing how even highly-capable researchers—in fields like biology, materials science, and chemistry—struggle to apply machine learning to their work. They often have valuable data, but lack the advanced ML knowledge to fully explore its potential. 
+Despite their expertise, the technical barriers make ML feel out of reach, and this is the exact problem that we wanted to solve. Curie can create end-to-end machine learning solutions for non-ML experts, and we have evidence of it already making a positive impact with our early adopters.</p>
+<h3>Introducing Curie's New Feature: Your Automated ML Solution</h3>
+<p>Curie goes beyond traditional parameter or architecture search based AutoML, and takes over all the tedious but critical work performed by ML practitioners.</p>
+<p>From data preprocessing, to model and hyperparameter selection, to training and deploying recipes, which all require deep expertise. It's a <strong>vast search space</strong> to find the best performing solution, often involving <strong>iterative experiments</strong> and <strong>specialized intuition</strong> to fine-tune all the different components in the pipeline. Curie aims to automate this. The goal is to democratize access to powerful ML capabilities for researchers.</p>
+<div class="figure-container" style="text-align: center; margin: 20px 0; ">
+    <img src="../blog/exp-bench-mle-curie.drawio.png" alt="Curie AutoML Overview" style="width: 80%; height: auto; max-width: 100%; display: block; margin: 0 auto; border-radius: 12px;">
+    <div style="margin-top: 10px; font-style: italic; font-size: 14px;">
+        Curie AutoML Overview
+    </div>
+</div>
+
+<p>All you need to do is input your research question and the dataset path to Curie (more details <a href="https://github.com/Just-Curieous/Curie">here</a>):</p>
+<pre><code class="language-python hljs" data-highlighted="yes">
+<span class="hljs-keyword">import</span> curie
+result = curie.experiment(
+    api_keys=key_dict,
+    question=<span class="hljs-string">"E.g. How to improve my prediction accuracy on my dataset. Checkout &lt;paper.pdf&gt; for the more information."</span>,
+    workspace_name=<span class="hljs-string">"[Optional] /path/to/your/code"</span>,
+    dataset_dir=<span class="hljs-string">"/path/to/your/dataset"</span>
+)
+</code></pre>
+
+<p>From there, it will work to generate the optimal ML solution for your specific problem given the budget.</p>
+<h3>Curie in Action: Demonstrated Performance</h3>
+<p>We've benchmarked Curie on several ML tasks—including several from <a href="https://github.com/openai/mle-bench/">MLE-Bench</a>—to demonstrate its capabilities:</p>
+<ul>
+<li><a href="https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/siim-isic-melanoma-classification">Identifying Melanoma (Cancer) in Images of Skin Lesions</a></li>
+<li><a href="https://github.com/Just-Curieous/Curie/blob/main/benchmark/mle_bench/aptos2019-blindness-detection">Predict the severity level of diabetic retinopathy based on retinal images</a></li>
+<li><a href="https://github.com/Just-Curieous/Curie/tree/main/benchmark/mle_bench/histopathologic-cancer-detection">Histopathologic Cancer Detection</a></li>
+<li><a href="https://github.com/Just-Curieous/Curie-Use-Cases/tree/main/stock_prediction">Stock Price Prediction</a></li>
+</ul>
+<p>More AutoML use cases can be found <a href="https://github.com/Just-Curieous/Curie-Use-Cases">here</a>.</p>
+<h4>Case Study: Skin Cancer Detection Challenge</h4>
+<p>Here's a preview of an auto-generated report from Curie. You can scroll through it to see the detailed analysis and insights:</p>
+<iframe src="../blog/report.pdf" width="100%" height="600px" style="border-radius: 12px;"></iframe>
+
+<p>Curie demonstrated some impressive capabilities in the skin cancer detection challenge:</p>
+<ul>
+<li>It managed to train a model achieving <strong>a remarkable 0.99 AUC (top 1% performance)</strong> using 2 hours. Moreover, the agent intelligently explored a variety of models with early stopping strategies on dataset subsets to quickly gauge potential to <strong>efficiently navigate the vast search space</strong> of possible models.</li>
+<li>It incorporated data augmentation (random rotation, color jitter, ...) to enhance model generalization.</li>
+<li>It provided detailed analysis on performance versus system trade-offs, offering insights for efficient model deployment strategies.</li>
+</ul>
+<p>Despite the strong performance, there are areas where Curie can evolve.</p>
+<ul>
+<li><p>The current model architectures explored were relatively basic, and the specific ML problem, while important, is a well-established one. It's possible the task wasn't as challenging as some newer, more complex problems. The true test will be its performance on more diverse, real-world datasets.</p>
+</li>
+<li><p>Looking ahead, a crucial area for improvement lies in enhancing the agent's hypothesis generation capabilities. We're keen to see it explore the search space beyond established empirical knowledge, which will be key to unlocking even higher levels of accuracy and tackling more novel challenges.</p>
+</li>
+</ul>
+<h3>Join Us &amp; Contribute to Open Science</h3>
+<p>And this is where we need your help! We believe in open science, and your usage of Curie will help us make it better and support more scientists. We also welcome contributions to our <a href="https://github.com/Just-Curieous/Curie/tree/main">repo</a>, we can't keep up with all the latest research by ourselves!</p>
+<!-- ## Performance Visualizations
+
+Here are some visualizations showcasing Curie's performance on various tasks: -->
+
+<!-- ![Model Performance Metrics]({{ site.baseurl }}/assets/output-1.png)
+*Figure 1: Comprehensive performance metrics across different model configurations*
+
+![Training Progress]({{ site.baseurl }}/assets/output-2.png)
+*Figure 2: Training progress and convergence analysis*
+
+![Model Comparison]({{ site.baseurl }}/assets/output-3.png)
+*Figure 3: Comparative analysis of different model architectures*
+
+![Feature Importance]({{ site.baseurl }}/assets/output-4.png)
+*Figure 4: Feature importance analysis and insights*
+
+![Performance Distribution]({{ site.baseurl }}/assets/output-5.png)
+*Figure 5: Distribution of model performance across different test cases*  -->
+
+
+<!-- - The agent accurately identified critical class imbalances within the APTOS 2019 dataset. -->
+<!-- Cool Factor: It smartly discovered that CLAHE enhancement significantly improved performance by clarifying subtle retinal features crucial for diagnosis. -->
+
+
+
+<pre><code class="language-latex hljs" data-highlighted="yes">
+@misc{kon2025curierigorousautomatedscientific,
+      title={Curie: Toward Rigorous and Automated Scientific Experimentation with AI Agents}, 
+      author={Patrick Tser Jern Kon and Jiachen Liu and Qiuyi Ding and Yiming Qiu and Zhenning Yang and Yibo Huang and Jayanth Srinivasa and Myungjin Lee and Mosharaf Chowdhury and Ang Chen},
+      year={2025},
+      eprint={2502.16069},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+}
+</code></pre>2:["$","article",null,{"className":"min-h-screen bg-stone-600","children":[["$","header",null,{"className":"bg-stone-600","children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16","children":[["$","div",null,{"className":"mb-4","children":["$","$L7",null,{"href":"/","className":"text-orange-400 font-medium","children":"Home"}]}],["$","h1",null,{"className":"text-4xl sm:text-5xl font-bold text-white mb-6","children":"The MLE Agent for Your Research"}],["$","div",null,{"className":"flex items-center gap-4 text-white mb-6","children":["$","time",null,{"dateTime":"$D2025-05-27T00:00:00.000Z","children":"May 26, 2025"}]}],["$","div",null,{"className":"flex gap-2 flex-wrap mb-6","children":[["$","span","machine-learning",{"className":"px-3 py-1 bg-gray-200 text-gray-700 hover:bg-gray-300 text-sm rounded-full","children":"machine-learning"}],["$","span","research",{"className":"px-3 py-1 bg-gray-200 text-gray-700 hover:bg-gray-300 text-sm rounded-full","children":"research"}]]}]]}]}],["$","div",null,{"className":"prose prose-lg max-w-4xl mx-auto markdown-content","children":["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$8"}}]}]]}]
+6:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Curie Research Platform"}],["$","link","3",{"rel":"icon","href":"/Just-Curieous.github.io/favicon.ico","type":"image/x-icon","sizes":"200x200"}],["$","meta","4",{"name":"next-size-adjust"}]]
+1:null
