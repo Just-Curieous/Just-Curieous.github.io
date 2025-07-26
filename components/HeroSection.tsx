@@ -9,8 +9,8 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto text-center">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            The Future of Scientific Research is
-            <span className="bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent"> Automated</span>
+            Moving Scientific Research at the Speed of
+            <span className="bg-gradient-to-r from-orange-300 to-orange-500 bg-clip-text text-transparent"> Thought</span>
           </h1>
           <p className="text-xl md:text-xl text-gray-300 mb-8 max-w-5xl mx-auto">
             Curie Research Platform helps answer your curiosity through end-to-end experimental automation, ensuring that every step—from hypothesis formulation to result interpretation—is conducted with precision, reliability, and reproducibility.
