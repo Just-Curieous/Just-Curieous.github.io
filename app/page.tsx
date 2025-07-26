@@ -101,16 +101,12 @@ export default function LandingPage() {
       
       
 
-      {/* Blog Section */}
-      <section id="blog" className="py-15 px-4 sm:px-6 lg:px-8">
-        <BlogPageClient posts={posts} />     
-      </section>
-
       {/* Research Section */}
-        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
+      <section id="research" className="py-15 px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-8">
             Research
         </h2>
-        <section className=" max-w-7xl mx-auto py-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="max-w-7xl mx-auto py-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           <article className="bg-white/10 backdrop-blur-lg rounded-2xl p-2 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1">
               <div className="p-3">
@@ -150,7 +146,13 @@ export default function LandingPage() {
             </div>
                     
           </article>
-        </section>
+        </div>
+      </section>
+
+      {/* Blog Section */}
+      <section id="blog" className="py-15 px-4 sm:px-6 lg:px-8">
+        <BlogPageClient posts={posts} />     
+      </section>
 
       {/* Demo Video Section
       

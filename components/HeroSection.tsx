@@ -16,7 +16,7 @@ export default function HeroSection() {
             Curie Research Platform helps answer your curiosity through end-to-end experimental automation, ensuring that every step—from hypothesis formulation to result interpretation—is conducted with precision, reliability, and reproducibility.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="https://github.com/Just-Curieous">
+            <a href="https://github.com/Just-Curieous/Curie">
               <button className="bg-gradient-to-r from-orange-400 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-orange-700 hover:to-red-700 transition-all duration-300 transform hover:scale-105 flex items-center group">
                 Github
                 <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />

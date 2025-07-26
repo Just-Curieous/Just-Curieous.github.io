@@ -27,7 +27,7 @@ export default function Footer() {
                       <p>829 University Ave, Palo Alto, CA 94301</p>
                     </div>
                     <div className="flex space-x-8 text-white">
-                      <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
+                      <Link href="https://calendly.com/amberljc/30min" className="hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">Contact</Link>
                     </div>
                   </div>
                   
