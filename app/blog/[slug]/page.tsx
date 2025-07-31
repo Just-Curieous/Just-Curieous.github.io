@@ -75,31 +75,31 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Header */}
       <header className="bg-stone-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
-          <div className="mb-4">
+          <div className="mb-6">
             <Link 
               href="/" 
-              className="text-orange-400 font-medium"
+              className="text-orange-400 hover:text-orange-300 font-medium transition-colors duration-200"
             >
-              Home
+              ← Back to Home
             </Link>
           </div>
           
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
             {post.title}
           </h1>
           
-          <div className="flex items-center gap-4 text-white mb-6">
-            <time dateTime={post.publishedAt}>
+          <div className="flex items-center gap-4 text-gray-300 mb-6">
+            <time dateTime={post.publishedAt} className="text-sm">
               {formatDate(post.publishedAt)}
             </time>
           </div>
           
           {post.tags.length > 0 && (
-            <div className="flex gap-2 flex-wrap mb-6">
+            <div className="flex gap-2 flex-wrap mb-8">
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-3 py-1 bg-gray-200 text-gray-700 hover:bg-gray-300 text-sm rounded-full"
+                  className="px-3 py-1 bg-orange-400/20 text-orange-300 border border-orange-400/30 hover:bg-orange-400/30 text-sm rounded-full transition-colors duration-200"
                 >
                   {tag}
                 </span>
@@ -109,12 +109,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </header>
 
-
       {/* Content */}
-      <div className="prose prose-lg max-w-4xl mx-auto markdown-content">
-        <div dangerouslySetInnerHTML={{ __html: highlightedContent }} />
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <div 
+            className="prose prose-lg prose-invert max-w-none markdown-content"
+            dangerouslySetInnerHTML={{ __html: highlightedContent }} 
+          />
+        </div>
       </div>
-
     </article>
   );
 }

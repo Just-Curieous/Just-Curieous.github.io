@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.11.1",
     "jsdom": "^26.1.0",

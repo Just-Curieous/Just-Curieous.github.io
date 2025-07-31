@@ -25,22 +25,143 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.markdown-content h1 {
-  @apply text-3xl font-bold mt-8 mb-4;
-}
-.markdown-content h2 {
-  @apply text-2xl text-white font-bold mt-6 mb-3;
-}
-.markdown-content h3 {
-  @apply text-xl font-bold mt-4 mb-2;
-}
-.markdown-content p {
-  @apply py-2 mb-4 leading-relaxed;
+/* Enhanced Markdown Content Styles */
+.markdown-content {
+  color: #e5e7eb;
+  line-height: 1.7;
 }
 
+.markdown-content h1 {
+  @apply text-3xl font-bold mt-8 mb-6 text-white;
+  border-bottom: 2px solid #f97316;
+  padding-bottom: 0.5rem;
+}
+
+.markdown-content h2 {
+  @apply text-2xl font-bold mt-8 mb-4 text-white;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 0.25rem;
+}
+
+.markdown-content h3 {
+  @apply text-xl font-bold mt-6 mb-3 text-white;
+}
+
+.markdown-content h4 {
+  @apply text-lg font-semibold mt-5 mb-2 text-white;
+}
+
+.markdown-content p {
+  @apply py-3 mb-4 leading-relaxed text-gray-200;
+}
+
+.markdown-content ul {
+  @apply mb-4 pl-6;
+}
+
+.markdown-content ol {
+  @apply mb-4 pl-6;
+}
+
+.markdown-content li {
+  @apply mb-2 text-gray-200;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 border-orange-400 pl-4 py-2 my-6 bg-orange-400/10 rounded-r-lg;
+}
+
+.markdown-content blockquote p {
+  @apply text-gray-300 italic;
+}
+
+.markdown-content a {
+  @apply text-orange-400 hover:text-orange-300 underline transition-colors duration-200;
+}
+
+.markdown-content strong {
+  @apply font-bold text-white;
+}
+
+.markdown-content em {
+  @apply italic text-gray-300;
+}
+
+.markdown-content code {
+  @apply px-2 py-1 bg-gray-800 text-orange-300 rounded-md text-sm font-mono;
+  font-family: 'JetBrains Mono', 'Consolas', 'Menlo', Courier, monospace;
+}
+
+.markdown-content pre {
+  @apply bg-gray-900 border border-gray-700 rounded-lg p-4 my-6 overflow-x-auto;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent p-0 text-gray-200;
+}
+
+.markdown-content table {
+  @apply w-full border-collapse border border-gray-600 my-6;
+}
+
+.markdown-content th {
+  @apply bg-gray-800 text-white font-semibold p-3 border border-gray-600;
+}
+
+.markdown-content td {
+  @apply p-3 border border-gray-600 text-gray-200;
+}
+
+.markdown-content tr:nth-child(even) {
+  @apply bg-gray-800/50;
+}
+
+.markdown-content img {
+  @apply max-w-full h-auto rounded-lg my-6 border border-gray-600;
+}
+
+.markdown-content hr {
+  @apply border-gray-600 my-8;
+}
+
+/* Inline code styling */
 code {
-    padding: 2px;
-    border-radius: 12px;
-    font-family: 'Consolas', 'Menlo', Courier, monospace;
-    font-size: 85%;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', 'Consolas', 'Menlo', Courier, monospace;
+  font-size: 85%;
+  background-color: #1f2937;
+  color: #f97316;
+  border: 1px solid #374151;
+}
+
+/* Additional utility classes for better typography */
+.text-balance {
+  text-wrap: balance;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+/* Improved focus states for accessibility */
+.markdown-content a:focus,
+.markdown-content button:focus {
+  @apply outline-none ring-2 ring-orange-400 ring-offset-2 ring-offset-gray-900;
+}
+
+/* Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better selection colors */
+::selection {
+  background-color: #f97316;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #f97316;
+  color: #ffffff;
 }
